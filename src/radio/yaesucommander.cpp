@@ -60,6 +60,8 @@ namespace
 {
 // APF level codes (CO03) run 00-50, -250..+250 Hz.
 constexpr int yaesuApfMax = 50;
+// A poll is skipped while the scope status block confirmed its value within this time.
+constexpr qint64 statusFreshLimitMs = 2000;
 }
 
 // This file parses data from the radio and also forms commands to the radio.
@@ -356,9 +358,41 @@ void yaesuCommander::haveScopeData(QByteArray in)
         queue->receiveValue(funcUnselectedFreq,QVariant::fromValue<freqt>(fb),0);
     }
 
+    if (rigCaps.scopeStatusBlock)
+    {
+        QHash<funcs, QVariant> confirmed;
+        const QHash<funcs, QVariant> changed = statusConfirm.update(yaesuStatusBlockValues(data), &confirmed);
+        if (!statusClock.isValid())
+        {
+            statusClock.start();
+        }
+        const qint64 now = statusClock.elapsed();
+        for (auto it = confirmed.constBegin(); it != confirmed.constEnd(); ++it)
+        {
+            if (rigCaps.commands.contains(it.key()))
+            {
+                statusFreshMs.insert(it.key(), now);
+            }
+        }
+        for (auto it = changed.constBegin(); it != changed.constEnd(); ++it)
+        {
+            if (rigCaps.commands.contains(it.key()))
+            {
+                queue->receiveValue(it.key(), it.value(), 0);
+            }
+        }
+    }
+
     emit setScopePoll(quint64(specTime+wfTime+10));
 
 
+}
+
+bool yaesuCommander::statusFresh(funcs func) const
+{
+    const auto it = statusFreshMs.constFind(func);
+    return it != statusFreshMs.constEnd() && statusClock.isValid()
+        && statusClock.elapsed() - it.value() < statusFreshLimitMs;
 }
 
 void yaesuCommander::networkCommSetup(QHash<quint16,rigInfo> rigList, quint16 rigCivAddr, udpPreferences prefs, audioSetup rxSetup, audioSetup txSetup, QString vsp, bool vspUseQueue, quint16 tcpPort)
@@ -1804,6 +1838,12 @@ void yaesuCommander::receiveCommand(funcs func, QVariant value, uchar receiver)
                    queueItem(funcCompressorLevel, QVariant::fromValue<uchar>(lastCompressorLevel), false, receiver));
 
     //qInfo() << "requested command:" << funcString[func];
+
+    // The scope status block already keeps this value current, so don't poll for it. Sets always go out.
+    if (!value.isValid() && rigCaps.scopeStatusBlock && statusFresh(func))
+    {
+        return;
+    }
 
     funcType cmd = getCommand(func,payload,val,receiver);
 
