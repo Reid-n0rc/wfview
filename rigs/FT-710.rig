@@ -1,5 +1,5 @@
 [General]
-Version=2.16
+Version=2.18
 
 [Rig]
 Manufacturer=2
@@ -946,7 +946,17 @@ Commands\92\Command29=false
 Commands\92\GetCommand=true
 Commands\92\SetCommand=true
 Commands\92\Admin=false
-Commands\size=92
+Commands\93\Type=Memory Keyer
+Commands\93\String=KM
+Commands\93\Min=1
+Commands\93\Max=5
+Commands\93\Bytes=1
+Commands\93\PadRight=false
+Commands\93\Command29=false
+Commands\93\GetCommand=false
+Commands\93\SetCommand=true
+Commands\93\Admin=false
+Commands\size=93
 Periodic\1\Priority=Medium Low
 Periodic\1\Command=Attenuator Status
 Periodic\1\VFO=0
