@@ -385,7 +385,6 @@ jobs:
           jom -j %NUMBER_OF_PROCESSORS%
 
       - name: Deploy Qt dependencies
-        if: steps.version_info.outputs.has_tag == 'true'
         shell: cmd
         run: |
           windeployqt ^
@@ -435,6 +434,14 @@ jobs:
         with:
           name: wfview-windows-x64
           path: wfview-windows-x64-setup.exe
+
+      # Fork-only: untagged runs upload the deployed build folder for testing.
+      - name: Upload untagged test build
+        if: steps.version_info.outputs.has_tag != 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: wfview-windows-x64-test
+          path: wfview/wfview-release
 
   # ═══════════════════════════════════════════════════════════════════
   #  macOS Universal Qt6 Build
