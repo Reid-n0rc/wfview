@@ -352,6 +352,8 @@ Control {
                     ceiling: controller ? controller.plotCeiling : 160
                     colors: controller ? controller.colors : null
                     center: controller ? controller.frequencyA : null
+                    // With split on, the other VFO is the transmit frequency.
+                    txFrequency: (controller && MainController.splitEnabled) ? controller.frequencyB : 0
                     bands: controller && controller.activeBands
                     underlayMode: MainController.settings ? Number(MainController.settings.options["Interface.UnderlayMode"]) : 2
                     peakDecay: MainController.settings ? Number(MainController.settings.options["Interface.PeakDecay"]) : 50
@@ -602,6 +604,8 @@ Control {
                                         // would stop following the radio's split state.
                                         checkable: false
                                         checked: controller ? controller.splitEnabled : false
+                                        // Some styles don't draw checked on a button that isn't checkable.
+                                        highlighted: MainController.splitEnabled
                                         visible: controller && (controller.uiFlags & ReceiverController.ShowSplitButton) !== 0
                                         onClicked: if (controller) controller.setSplitEnabled(!controller.splitEnabled)
                                     }
@@ -1520,7 +1524,10 @@ Control {
                         Slider {
                             WheelArea {}
                             id: ifShiftSlider
+                            readonly property var spec: controller ? controller.uiSpecs["ifShiftSlider"] : null
                             objectName: "ifShift"
+                            from: spec ? spec.from : 0
+                            to: spec ? spec.to : 1
                             value: controller ? controller.ifShift : 0
                             onMoved: controller.ifShift = value
                             Layout.fillWidth: true
