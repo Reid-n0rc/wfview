@@ -48,6 +48,7 @@ SOURCES += \
     $$PWD/tst_rigctld.cpp \
     $$PWD/tst_rigprotocols.cpp \
     $$PWD/tst_txaudiopacer.cpp \
+    $$PWD/tst_yaesuvalues.cpp \
     $$PWD/../src/audio/txaudiopacer.cpp \
     $$PWD/../src/cluster.cpp \
     $$PWD/../src/ControllerController.cpp \
@@ -60,7 +61,8 @@ SOURCES += \
     $$PWD/../src/rigctlcompat.cpp \
     $$PWD/../src/cachingqueue.cpp \
     $$PWD/../src/cwmorse.cpp \
-    $$PWD/../src/rigctld.cpp
+    $$PWD/../src/rigctld.cpp \
+    $$PWD/../src/radio/yaesuvalues.cpp
 
 HEADERS += \
     $$PWD/../include/cluster.h \
@@ -78,4 +80,5 @@ HEADERS += \
     $$PWD/../include/cachingqueue.h \
     $$PWD/../include/cwmorse.h \
     $$PWD/../include/txaudiopacer.h \
-    $$PWD/../include/usbcontroller.h
+    $$PWD/../include/usbcontroller.h \
+    $$PWD/../include/yaesuvalues.h
