@@ -7,6 +7,41 @@
 #include "mcphooks.h"
 #include "commhandler.h"
 
+namespace
+{
+constexpr int rmMeterDigits = 3;
+// CF000 sets and reports the RX and TX clarifier together: CF000<rx><tx>000;
+const QByteArray clarifierStatusCommand = QByteArrayLiteral("CF000");
+// KP sets the CW pitch in 10 Hz steps from 300 Hz.
+constexpr int cwPitchBaseHz = 300;
+constexpr int cwPitchStepHz = 10;
+
+ushort cwPitchHzFromSteps(int steps)
+{
+    return ushort(cwPitchBaseHz + steps * cwPitchStepHz);
+}
+
+int cwPitchStepsFromHz(int hz)
+{
+    return (hz - cwPitchBaseHz + cwPitchStepHz / 2) / cwPitchStepHz;
+}
+
+// The FT-710 rejects RF power above 25 W in AM and AM-N.
+constexpr ushort maxAmPower = 25;
+
+// wfview's single tone command uses 1 = tone and 2 = tone squelch (as on the
+// TS-890). Yaesu's CT uses 1 = CTCSS encode and decode (tone squelch) and
+// 2 = CTCSS encode only (tone). Other values are the same both ways.
+uchar swapYaesuToneMode(uchar mode)
+{
+    if (mode == 1)
+        return 2;
+    if (mode == 2)
+        return 1;
+    return mode;
+}
+}
+
 // Copyright 2017-2024 Elliott H. Liggett W6EL and Phil E. Taylor M0VSE
 
 // This file parses data from the radio and also forms commands to the radio.
@@ -698,11 +733,18 @@ bool yaesuCommander::queueParsedExternalCommand(funcs func, const funcType &type
         }
         break;
     }
+    case funcRepeaterTone:
+        value.setValue<uchar>(swapYaesuToneMode(uchar(d.mid(0, 1).toUShort(&ok))));
+        break;
     case funcRitStatus:
+        // The client's TX clarifier is kept when the command is sent on.
+        if (type.data == clarifierStatusCommand)
+            clarifierTx = d.size() > 1 && d.at(1) == '1';
+        value.setValue(d.mid(0, 1).toUShort(&ok) != 0);
+        break;
     case funcMonitor:
     case funcCompressor:
     case funcVox:
-    case funcRepeaterTone:
     case funcRepeaterTSQL:
     case funcScopeOnOff:
     case funcScopeHold:
@@ -724,6 +766,9 @@ bool yaesuCommander::queueParsedExternalCommand(funcs func, const funcType &type
         value.setValue(QVariant::fromValue<short>(val));
         break;
     }
+    case funcCwPitch:
+        value.setValue<ushort>(cwPitchHzFromSteps(d.mid(0, type.bytes).toInt(&ok)));
+        break;
     case funcAGCTimeConstant:
     case funcMemorySelect:
     case funcRfGain:
@@ -743,7 +788,6 @@ bool yaesuCommander::queueParsedExternalCommand(funcs func, const funcType &type
     case funcFilterShape:
     case funcRoofingFilter:
     case funcScopeSpeed:
-    case funcCwPitch:
     case funcAfGain:
     case funcBreakIn:
         value.setValue<uchar>(d.mid(0, type.bytes).toUShort(&ok));
@@ -1139,11 +1183,10 @@ void yaesuCommander::parseData(QByteArray data)
         case funcMeterType:
             // We don't use this but it saves getting a log message.
             break;
-        case funcRitStatus:
         case funcMonitor:
         case funcCompressor:
         case funcVox:
-        case funcRepeaterTone:
+        case funcAutoNotch:
         case funcRepeaterTSQL:
         case funcScopeOnOff:
         case funcScopeHold:
@@ -1225,7 +1268,6 @@ void yaesuCommander::parseData(QByteArray data)
         case funcFilterShape:
         case funcRoofingFilter:
         case funcScopeSpeed:
-        case funcCwPitch:
             value.setValue<uchar>(d.mid(0,type.bytes).toUShort());
             break;
         case funcVFOAInformation:
@@ -1250,9 +1292,32 @@ void yaesuCommander::parseData(QByteArray data)
         case funcRitFreq:
             value.setValue<short>(d.toShort());
             break;
+        case funcRepeaterTone:
+            value.setValue<uchar>(swapYaesuToneMode(uchar(d.mid(0,1).toUShort())));
+            break;
+        case funcCwPitch:
+            value.setValue<ushort>(cwPitchHzFromSteps(d.mid(0,type.bytes).toInt()));
+            break;
+        case funcRitStatus:
+            // Trailing zeros have been removed, so a missing second digit means TX clarifier off.
+            if (type.data == clarifierStatusCommand)
+                clarifierTx = d.size() > 1 && d.at(1) == '1';
+            value.setValue<bool>(d.mid(0,1).toUShort());
+            break;
+        case funcNBLevel:
+        case funcNRLevel:
+        case funcVoxGain:
+        case funcAntiVoxGain:
+            value.setValue<ushort>(d.left(type.bytes).toUShort());
+            break;
         case funcCompressorLevel:
-            // We only want the second value.
-            value.setValue<uchar>(d.mid(type.bytes,type.bytes).toUShort());
+            // Some rigs answer with two values and we want the second; the FT-710 answers with one.
+            if (d.size() >= type.bytes * 2)
+                value.setValue<uchar>(d.mid(type.bytes,type.bytes).toUShort());
+            else
+                value.setValue<uchar>(d.left(type.bytes).toUShort());
+            if (value.value<uchar>() > 0)
+                lastCompressorLevel = value.value<uchar>();
             break;
         case funcScopeSpan:
             for (auto &s: rigCaps.scopeCenterSpans)
@@ -1266,23 +1331,24 @@ void yaesuCommander::parseData(QByteArray data)
         case funcSMeter:
             value.setValue(getMeterCal(meterS,d.toUShort()));
             break;
+        // The RM meters answer with three digits followed by padding (RMnvvv000).
         case funcPowerMeter:
-            value.setValue(getMeterCal(meterPower,d.toUShort()));
+            value.setValue(getMeterCal(meterPower,d.left(rmMeterDigits).toUShort()));
             break;
         case funcSWRMeter:
-            value.setValue(getMeterCal(meterSWR,d.toUShort()));
+            value.setValue(getMeterCal(meterSWR,d.left(rmMeterDigits).toUShort()));
             break;
         case funcALCMeter:
-            value.setValue(getMeterCal(meterALC,d.toUShort()));
+            value.setValue(getMeterCal(meterALC,d.left(rmMeterDigits).toUShort()));
             break;
         case funcCompMeter:
-            value.setValue(getMeterCal(meterComp,d.toUShort()));
+            value.setValue(getMeterCal(meterComp,d.left(rmMeterDigits).toUShort()));
             break;
         case funcVdMeter:
-            value.setValue(getMeterCal(meterVoltage,d.toUShort()));
+            value.setValue(getMeterCal(meterVoltage,d.left(rmMeterDigits).toUShort()));
             break;
         case funcIdMeter:
-            value.setValue(getMeterCal(meterCurrent,d.toUShort()));
+            value.setValue(getMeterCal(meterCurrent,d.left(rmMeterDigits).toUShort()));
             break;
         case funcMemoryContents:
         // Contains the contents of the rig memory
@@ -1619,6 +1685,28 @@ void yaesuCommander::receiveCommand(funcs func, QVariant value, uchar receiver)
     }
 
 
+    if (func == funcRFPower && value.isValid()) {
+        const modeInfo mi = queue->getCache(rigCaps.commands.contains(funcSelectedMode)?funcSelectedMode:funcMode,
+                                            receiver).value.value<modeInfo>();
+        if ((mi.mk == modeAM || mi.mk == modeAMN) && value.value<ushort>() > maxAmPower) {
+            qInfo(logRig()) << "RF power" << value.value<ushort>() << "is above the AM limit, sending" << maxAmPower;
+            value = QVariant::fromValue<ushort>(maxAmPower);
+        }
+    }
+
+    if (func == funcRepeaterTone && value.isValid()) {
+        const uchar mode = !strcmp(value.typeName(), "bool") ? uchar(value.toBool()) : value.value<uchar>();
+        value.setValue<uchar>(swapYaesuToneMode(mode));
+    }
+
+    // On the FT-710, turning the speech processor on sets its level to 50 and
+    // turning it off sets it to 0, so send the user's last level after turning it on.
+    if (func == funcCompressorLevel && value.isValid() && value.value<uchar>() > 0)
+        lastCompressorLevel = value.value<uchar>();
+    if (func == funcCompressor && value.isValid() && value.toBool() && lastCompressorLevel > 0)
+        queue->add(priorityImmediate,
+                   queueItem(funcCompressorLevel, QVariant::fromValue<uchar>(lastCompressorLevel), false, receiver));
+
     //qInfo() << "requested command:" << funcString[func];
 
     funcType cmd = getCommand(func,payload,val,receiver);
@@ -1707,7 +1795,12 @@ void yaesuCommander::receiveCommand(funcs func, QVariant value, uchar receiver)
             else if(!strcmp(value.typeName(),"bool") || !strcmp(value.typeName(),"uchar") || !strcmp(value.typeName(),"int"))
             {
                 // This is a simple number
-                if(func==funcTunerStatus) {
+                if (func == funcRitStatus && cmd.data == clarifierStatusCommand) {
+                    // Keep the TX clarifier as the radio last reported it.
+                    payload.append(value.toBool() ? '1' : '0');
+                    payload.append(clarifierTx ? '1' : '0');
+                    payload.append("000");
+                } else if(func==funcTunerStatus) {
                     // AC P1 P2 P3; P1 is always 0 per FT-710 CAT spec.
                     switch(value.value<uchar>()) {
                     case 0:
@@ -1772,7 +1865,12 @@ void yaesuCommander::receiveCommand(funcs func, QVariant value, uchar receiver)
             }
             else if(!strcmp(value.typeName(),"ushort") )
             {
-                if (func == funcFilterWidth)
+                if (func == funcCwPitch)
+                {
+                    const int hz = qBound(int(cmd.minVal), int(value.value<ushort>()), int(cmd.maxVal));
+                    payload.append(QString::number(cwPitchStepsFromHz(hz)).rightJustified(cmd.bytes, QChar('0')).toLatin1());
+                }
+                else if (func == funcFilterWidth)
                 {
                     // We need to work out which mode first:
                     ushort width=value.value<ushort>();
