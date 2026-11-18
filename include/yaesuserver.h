@@ -41,6 +41,7 @@ public slots:
 	void dataForServer(QByteArray);
 	void receiveScopeData(QByteArray);
 	void receiveAudioData(const audioPacket &data);
+    void setCwKeyAvailable(bool available);
 
 private:
 
@@ -102,6 +103,11 @@ private:
     QByteArray encodeFrame(const void* data, qsizetype len) const;
     void sendResult(QUdpSocket* socket, const QHostAddress& address, quint16 port, yaesuDeviceId device, yaesuMessageId message, quint32 result);
     void sendHealth(QUdpSocket* socket, const QHostAddress& address, quint16 port, yaesuDeviceId device);
+    void processCwKey(const QByteArray& decoded, const PendingDatagram& datagram);
+    void sendCwKeyState(const CLIENT* client, const QHostAddress& address, quint16 port);
+    bool userMayTransmit(const CLIENT* client) const;
+    void stopCwKey(const char* reason);
+    void checkCwKeyClient();
 
     QUdpSocket* controlSocket = nullptr;
     QUdpSocket* catSocket = nullptr;
@@ -111,6 +117,9 @@ private:
     QTimer* wdTimer = nullptr;
     quint32 nextSession = 1;
     quint16 txCatPacketId = 0;
+    quint32 cwKeySession = 0;      // client whose CW is being keyed, 0 for none
+    QByteArray cwKeyGuid;          // radio that client is using
+    QTimer* cwKeyTimer = nullptr;  // stops keying when that client goes quiet
 };
 
 
