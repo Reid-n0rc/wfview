@@ -1540,10 +1540,14 @@ Control {
                         text: qsTr("Filter width")
                         Layout.preferredWidth: sideFlick.labelColW
                         Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-                        visible: filterWidthSlider.visible
+                        visible: filterWidthRow.visible
                     }
                     RowLayout {
-                        visible: filterWidthSlider.visible
+                        id: filterWidthRow
+                        // Decided here rather than from the slider's visible, which is false while
+                        // this row is hidden and so could never show the row again.
+                        visible: drawerGrid.features.filterWidth === true
+                                 && filterWidthSlider.widthMax > filterWidthSlider.widthMin
                         Layout.fillWidth: true
                         spacing: 6
 
@@ -1557,7 +1561,6 @@ Control {
                             readonly property bool stepped: widths.length > 0
                             readonly property int widthMin: controller ? controller.filterWidthMin : 0
                             readonly property int widthMax: controller ? controller.filterWidthMax : 0
-                            visible: drawerGrid.features.filterWidth === true && widthMax > widthMin
                             from: stepped ? 0 : widthMin
                             to: stepped ? widths.length - 1 : widthMax
                             stepSize: stepped ? 1 : 50
