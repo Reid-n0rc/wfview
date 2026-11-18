@@ -10,6 +10,13 @@
 
 namespace
 {
+// A ?; reply is reported with the commands sent this long before it.
+constexpr qint64 rejectedCommandWindowMs = 500;
+constexpr int maxRecentCommands = 16;
+}
+
+namespace
+{
 constexpr int rmMeterDigits = 3;
 // CF000 sets and reports the RX and TX clarifier together: CF000<rx><tx>000;
 const QByteArray clarifierStatusCommand = QByteArrayLiteral("CF000");
@@ -750,6 +757,9 @@ bool yaesuCommander::queueParsedExternalCommand(funcs func, const funcType &type
         value.setValue(d.mid(0, 1).toUShort(&ok) != 0);
         break;
     case funcMonitor:
+        // ML0 answers with three digits, 000 for off and 001 for on.
+        value.setValue(d.toUShort(&ok) != 0);
+        break;
     case funcCompressor:
     case funcVox:
     case funcRepeaterTSQL:
@@ -1026,6 +1036,10 @@ void yaesuCommander::parseData(QByteArray data)
     for (auto &d: commands) {        
         if (d.isEmpty())
             continue;
+        // Each reply is matched on its own. A reply the rig file doesn't know (for example an
+        // auto-information frame) must not be decoded as the command before it.
+        func = funcNone;
+        type = funcType();
         uchar receiver = 0; // Used for Dual/RX
         cmdFull = d; // save the complete cmd for debug later.
 
@@ -1191,6 +1205,9 @@ void yaesuCommander::parseData(QByteArray data)
             // We don't use this but it saves getting a log message.
             break;
         case funcMonitor:
+            // ML0 answers with three digits, 000 for off and 001 for on.
+            value.setValue<bool>(d.toUShort() != 0);
+            break;
         case funcCompressor:
         case funcVox:
         case funcAutoNotch:
@@ -1486,9 +1503,19 @@ void yaesuCommander::parseData(QByteArray data)
             value.setValue(uchar(d.at(0)));
             break;
         case funcFA:
-            qInfo(logRig()) << "Rig error, last command sent:" << funcString[lastCommand.func] << "(min:" << lastCommand.minValue << "max:" <<
-                lastCommand.maxValue << "bytes:" << lastCommand.bytes <<  ") data:" << lastCommand.data;
+        {
+            // ?; names no command, and with auto information on it can arrive after later
+            // commands were sent, so report every command sent shortly before it.
+            QByteArrayList recent;
+            const qint64 now = commandClock.isValid() ? commandClock.elapsed() : 0;
+            for (const auto& c : std::as_const(recentCommands)) {
+                if (now - c.ms <= rejectedCommandWindowMs)
+                    recent.append(c.data);
+            }
+            qInfo(logRig()).noquote() << "Rig rejected a command (?;). Sent in the last"
+                                      << rejectedCommandWindowMs << "ms:" << recent.join(' ');
             break;
+        }
         default:
             qWarning(logRig()).noquote() << "Unhandled command received from rig:" << funcString[func] << "value:" << d.mid(0,10);
             break;
@@ -2263,6 +2290,12 @@ void yaesuCommander::receiveCommand(funcs func, QVariant value, uchar receiver)
         qDebug(logRigTraffic()).noquote() << "Send to rig: " << funcString[cmd.cmd] << payload.toStdString().c_str();
 
         emit sendDataToRig(payload);
+
+        if (!commandClock.isValid())
+            commandClock.start();
+        recentCommands.append(sentCommand{commandClock.elapsed(), payload});
+        while (recentCommands.size() > maxRecentCommands)
+            recentCommands.removeFirst();
 
         lastCommand.func = func;
         lastCommand.data = payload;
