@@ -3744,7 +3744,7 @@ Przeszukane lokalizacje:
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="1767"/>
-        <location filename="../qml/RigCreator.qml" line="2099"/>
+        <location filename="../qml/RigCreator.qml" line="2129"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
@@ -3924,52 +3924,52 @@ Przeszukane lokalizacje:
         <translation>Zadaszenie</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1990"/>
+        <location filename="../qml/RigCreator.qml" line="1998"/>
         <source>Features</source>
         <translation>Funkcje</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1994"/>
+        <location filename="../qml/RigCreator.qml" line="2002"/>
         <source>Has Spectrum</source>
         <translation>Posiada Spectrum</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1995"/>
+        <location filename="../qml/RigCreator.qml" line="2003"/>
         <source>Has LAN</source>
         <translation>Posiada LAN</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1996"/>
+        <location filename="../qml/RigCreator.qml" line="2004"/>
         <source>Has Ethernet</source>
         <translation>Posiada Ethernet</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1997"/>
+        <location filename="../qml/RigCreator.qml" line="2005"/>
         <source>Has WiFi</source>
         <translation>Posiada WiFi</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1998"/>
+        <location filename="../qml/RigCreator.qml" line="2006"/>
         <source>Has Transmit</source>
         <translation>Posiada Nadawanie</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1999"/>
+        <location filename="../qml/RigCreator.qml" line="2007"/>
         <source>Has FD Comms</source>
         <translation>Posiada komunikator FD</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2000"/>
+        <location filename="../qml/RigCreator.qml" line="2008"/>
         <source>Has Cmd 29</source>
         <translation>Ma cmd 29</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2002"/>
+        <location filename="../qml/RigCreator.qml" line="2010"/>
         <source>Absolute VFO Freq</source>
         <translation type="unfinished">Absolutna częstotliwość VFO</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2007"/>
+        <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Enable when the Selected Freq and Unselected Freq commands always address VFO A and VFO B (for example Kenwood FA/FB), rather than the active and inactive VFO.
 When VFO B is selected, wfview then sends tuning to the Unselected Freq command and shows its replies as the active frequency.
 Leave off when the radio&apos;s frequency commands follow the active VFO (for example Icom 0x25).</source>
@@ -3978,34 +3978,46 @@ Po wybraniu VFO B wfview wysyła polecenie strojenia do polecenia Unselected Fre
 Przestań, jeśli polecenia częstotliwości radia następują po aktywnym VFO (na przykład Icom 0x25).</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2015"/>
+        <location filename="../qml/RigCreator.qml" line="2022"/>
+        <source>Tone squelch is 1</source>
+        <translation type="unfinished">Blokada tonowa = 1</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2027"/>
+        <source>Enable when the radio&apos;s tone mode uses 1 for tone squelch (encode and decode) and 2 for tone (encode only), for example the Yaesu FT-710.
+wfview uses 1 for tone and 2 for tone squelch, and swaps them for these radios.</source>
+        <translation type="unfinished">Włącz, gdy tryb tonu radia używa 1 dla blokady tonowej (kodowanie i dekodowanie) i 2 dla tonu (tylko kodowanie), na przykład Yaesu FT-710.
+wfview używa 1 dla tonu i 2 dla blokady tonowej i zamienia je dla tych radiostacji.</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2033"/>
         <source>Slow polling on TX</source>
         <translation type="unfinished">Wolniejsze odpytywanie podczas TX</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2020"/>
+        <location filename="../qml/RigCreator.qml" line="2038"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
         <translation type="unfinished">Przy połączeniu sieciowym odpytuj radio tyle razy rzadziej podczas nadawania.
 Dotyczy odpytywania automatycznego i ręcznego. Duży ruch CAT podczas nadawania powoduje zakłócenia dźwięku LAN w niektórych radiach (na przykład TS-890S). Eksperymentalne.</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2027"/>
+        <location filename="../qml/RigCreator.qml" line="2045"/>
         <source>Factor</source>
         <translation type="unfinished">Współczynnik</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2036"/>
+        <location filename="../qml/RigCreator.qml" line="2054"/>
         <source>x slower</source>
         <translation type="unfinished">x wolniej</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2039"/>
+        <location filename="../qml/RigCreator.qml" line="2057"/>
         <source>Radio TX audio buffer</source>
         <translation type="unfinished">Bufor audio TX radia</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2058"/>
+        <location filename="../qml/RigCreator.qml" line="2076"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
@@ -4014,82 +4026,106 @@ Gdy nadawanie się kończy, wfview wysyła resztę dźwięku i czeka tyle czasu 
 100 ms wystarcza dla większości radiostacji; TS-890S potrzebuje około 300 ms.</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2063"/>
+        <location filename="../qml/RigCreator.qml" line="2081"/>
         <source>ms</source>
         <translation type="unfinished">ms</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2072"/>
+        <location filename="../qml/RigCreator.qml" line="2090"/>
         <source>Spectrum</source>
         <translation>Spektrum</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2078"/>
+        <location filename="../qml/RigCreator.qml" line="2096"/>
         <source>Num RX</source>
         <translation>Liczba RX</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2079"/>
+        <location filename="../qml/RigCreator.qml" line="2097"/>
         <source>VFO/RX</source>
         <translation>VFO/RX</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2080"/>
+        <location filename="../qml/RigCreator.qml" line="2098"/>
         <source>Seq Max</source>
         <translation>Sekw. maks</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2081"/>
+        <location filename="../qml/RigCreator.qml" line="2099"/>
         <source>Amp Max</source>
         <translation>Maks. wzmacniacz</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2082"/>
+        <location filename="../qml/RigCreator.qml" line="2100"/>
         <source>Len Max</source>
         <translation>Len Maks</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2083"/>
+        <location filename="../qml/RigCreator.qml" line="2101"/>
         <source>dB per DN</source>
         <translation type="unfinished">dB na DN</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2090"/>
+        <location filename="../qml/RigCreator.qml" line="2104"/>
+        <source>Scope status block</source>
+        <translation type="unfinished">Blok stanu skopu</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2109"/>
+        <source>Enable when each scope frame from the radio also carries its frequencies, mode and other settings, for example the Yaesu FT-710.
+wfview then takes those values from the frames and doesn&apos;t poll for them while frames arrive. Polling resumes by itself when they stop.</source>
+        <translation type="unfinished">Włącz, gdy każda ramka skopu z radia zawiera też jego częstotliwości, tryb i inne ustawienia, na przykład Yaesu FT-710.
+wfview pobiera wtedy te wartości z ramek i nie odpytuje o nie, dopóki ramki przychodzą. Odpytywanie wznawia się samo, gdy przestaną.</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2120"/>
         <source>Memories</source>
         <translation>Pamięci</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2096"/>
+        <location filename="../qml/RigCreator.qml" line="2126"/>
         <source>Grp</source>
         <translation>Grupa</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2097"/>
+        <location filename="../qml/RigCreator.qml" line="2127"/>
         <source>Mem</source>
         <translation>Pamięć</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2098"/>
+        <location filename="../qml/RigCreator.qml" line="2128"/>
         <source>Sat</source>
         <translation>sob</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2117"/>
+        <location filename="../qml/RigCreator.qml" line="2131"/>
+        <source>CW Mem</source>
+        <translation type="unfinished">Pamięć CW</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2147"/>
+        <source>The keyer memory (1-5) that CW Sender text goes through, on radios that send CW text by playing a keyer memory (Yaesu KM / KY).
+What the memory held is put back when sending ends.</source>
+        <translation type="unfinished">Pamięć keyera (1-5), przez którą przechodzi tekst z CW Nadawca, w radiach wysyłających tekst CW przez odtworzenie pamięci keyera (Yaesu KM / KY).
+Poprzednia zawartość pamięci jest przywracana po zakończeniu nadawania.</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2168"/>
         <source>Main Memory Format</source>
         <translation>Format Głównej Pamięci</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2123"/>
+        <location filename="../qml/RigCreator.qml" line="2174"/>
         <source>See your QWidget tooltip text (keep it in docs/help).</source>
         <translation>Zobacz tekst podpowiedzi QWidget (zachowaj go w dokumentacji/pomocy).</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2129"/>
+        <location filename="../qml/RigCreator.qml" line="2180"/>
         <source>Satellite Memory Format</source>
         <translation>Format Pamięci Satelitarnej</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2144"/>
+        <location filename="../qml/RigCreator.qml" line="2195"/>
         <source>Close</source>
         <translation>Zamknąć</translation>
     </message>
