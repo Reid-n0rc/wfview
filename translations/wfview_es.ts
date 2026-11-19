@@ -2723,7 +2723,7 @@ Ubicaciones buscadas:
     </message>
     <message>
         <location filename="../qml/Receiver.qml" line="303"/>
-        <location filename="../qml/Receiver.qml" line="2381"/>
+        <location filename="../qml/Receiver.qml" line="2388"/>
         <source>☰</source>
         <translation>☰</translation>
     </message>
@@ -2936,128 +2936,138 @@ Ubicaciones buscadas:
         <translation type="unfinished">Ancho del filtro</translation>
     </message>
     <message>
+        <location filename="../qml/Receiver.qml" line="1595"/>
+        <source>IF filter width. Steps through the widths the radio offers in this mode.</source>
+        <translation type="unfinished">Ancho del filtro de FI. Recorre los anchos que ofrece la radio en este modo.</translation>
+    </message>
+    <message>
         <location filename="../qml/Receiver.qml" line="1596"/>
-        <location filename="../qml/Receiver.qml" line="1599"/>
+        <source>IF filter width, in Hz.</source>
+        <translation type="unfinished">Ancho del filtro de FI, en Hz.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Receiver.qml" line="1603"/>
+        <location filename="../qml/Receiver.qml" line="1606"/>
         <source>%1 Hz</source>
         <translation>%1 Hz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1612"/>
+        <location filename="../qml/Receiver.qml" line="1619"/>
         <source>NB</source>
         <translation>NB</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1660"/>
+        <location filename="../qml/Receiver.qml" line="1667"/>
         <source>NR</source>
         <translation>NR</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1714"/>
+        <location filename="../qml/Receiver.qml" line="1721"/>
         <source>IP+</source>
         <translation>IP+</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1727"/>
+        <location filename="../qml/Receiver.qml" line="1734"/>
         <source>MN</source>
         <translation>MN</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1740"/>
+        <location filename="../qml/Receiver.qml" line="1747"/>
         <source>DS</source>
         <translation>DS</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1752"/>
+        <location filename="../qml/Receiver.qml" line="1759"/>
         <source>RF Gain</source>
         <translation type="unfinished">Ganancia RF</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1779"/>
+        <location filename="../qml/Receiver.qml" line="1786"/>
         <source>AF Gain</source>
         <translation type="unfinished">Ganancia AF</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1806"/>
+        <location filename="../qml/Receiver.qml" line="1813"/>
         <source>Squelch</source>
         <translation type="unfinished">Aplastar</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="1834"/>
+        <location filename="../qml/Receiver.qml" line="1841"/>
         <source>Attenuator</source>
         <translation type="unfinished">Atenuador</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2032"/>
+        <location filename="../qml/Receiver.qml" line="2039"/>
         <source>Preamp</source>
         <translation type="unfinished">Preamplificador</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2227"/>
+        <location filename="../qml/Receiver.qml" line="2234"/>
         <source>AGC</source>
         <translation>AGC</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2297"/>
+        <location filename="../qml/Receiver.qml" line="2304"/>
         <source>RX</source>
         <translation>RX</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2318"/>
+        <location filename="../qml/Receiver.qml" line="2325"/>
         <source>Scope enabled</source>
         <translation type="unfinished">Alcance habilitado</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2381"/>
+        <location filename="../qml/Receiver.qml" line="2388"/>
         <source>RX Settings</source>
         <translation type="unfinished">Configuración RX</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2425"/>
+        <location filename="../qml/Receiver.qml" line="2432"/>
         <source>Edge to replace:</source>
         <translation type="unfinished">Borde a reemplazar:</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2446"/>
+        <location filename="../qml/Receiver.qml" line="2453"/>
         <source>Custom Fixed Edge</source>
         <translation type="unfinished">Borde fijo personalizado</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2466"/>
+        <location filename="../qml/Receiver.qml" line="2473"/>
         <source>Enter both edges in MHz</source>
         <translation type="unfinished">Introduzca ambos flancos en MHz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2468"/>
+        <location filename="../qml/Receiver.qml" line="2475"/>
         <source>End must be above start</source>
         <translation type="unfinished">El final debe estar por encima del inicio</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2470"/>
+        <location filename="../qml/Receiver.qml" line="2477"/>
         <source>Start is below %1 MHz</source>
         <translation type="unfinished">El inicio está por debajo de %1 MHz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2472"/>
+        <location filename="../qml/Receiver.qml" line="2479"/>
         <source>End is above %1 MHz</source>
         <translation type="unfinished">El final está por encima de %1 MHz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2476"/>
+        <location filename="../qml/Receiver.qml" line="2483"/>
         <source>Span must be at least %1 kHz</source>
         <translation type="unfinished">El rango debe ser de al menos %1 kHz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2478"/>
+        <location filename="../qml/Receiver.qml" line="2485"/>
         <source>Span must be at most %1 kHz</source>
         <translation type="unfinished">El rango debe ser como máximo %1 kHz</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2521"/>
+        <location filename="../qml/Receiver.qml" line="2528"/>
         <source>Start frequency (MHz):</source>
         <translation type="unfinished">Frecuencia de inicio (MHz):</translation>
     </message>
     <message>
-        <location filename="../qml/Receiver.qml" line="2534"/>
+        <location filename="../qml/Receiver.qml" line="2541"/>
         <source>End frequency (MHz):</source>
         <translation type="unfinished">Frecuencia final (MHz):</translation>
     </message>
@@ -4209,7 +4219,7 @@ wfview usa allí un archivo rig en lugar del instalado para la misma radio, siem
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="687"/>
-        <location filename="../qml/Settings.qml" line="3914"/>
+        <location filename="../qml/Settings.qml" line="3916"/>
         <source>Macros</source>
         <translation type="unfinished">Macros</translation>
     </message>
@@ -4245,8 +4255,8 @@ wfview usa allí un archivo rig en lugar del instalado para la misma radio, siem
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="814"/>
-        <location filename="../qml/Settings.qml" line="2865"/>
-        <location filename="../qml/Settings.qml" line="3302"/>
+        <location filename="../qml/Settings.qml" line="2867"/>
+        <location filename="../qml/Settings.qml" line="3304"/>
         <source>Add</source>
         <translation type="unfinished">Agregar</translation>
     </message>
@@ -4257,7 +4267,7 @@ wfview usa allí un archivo rig en lugar del instalado para la misma radio, siem
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="821"/>
-        <location filename="../qml/Settings.qml" line="3974"/>
+        <location filename="../qml/Settings.qml" line="3976"/>
         <source>Delete</source>
         <translation type="unfinished">Borrar</translation>
     </message>
@@ -4385,25 +4395,25 @@ Para que los cambios surtan efecto, deberá guardar la configuración y volver a
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="997"/>
-        <location filename="../qml/Settings.qml" line="2821"/>
+        <location filename="../qml/Settings.qml" line="2823"/>
         <source>Audio System</source>
         <translation type="unfinished">Sistema de audio</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1004"/>
-        <location filename="../qml/Settings.qml" line="2825"/>
+        <location filename="../qml/Settings.qml" line="2827"/>
         <source>Qt Audio</source>
         <translation type="unfinished">Audio Qt</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1005"/>
-        <location filename="../qml/Settings.qml" line="2826"/>
+        <location filename="../qml/Settings.qml" line="2828"/>
         <source>PortAudio</source>
         <translation>PortAudio</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1006"/>
-        <location filename="../qml/Settings.qml" line="2827"/>
+        <location filename="../qml/Settings.qml" line="2829"/>
         <source>RT Audio</source>
         <translation type="unfinished">RT Audio</translation>
     </message>
@@ -4477,13 +4487,13 @@ Para que los cambios surtan efecto, deberá guardar la configuración y volver a
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1144"/>
-        <location filename="../qml/Settings.qml" line="2644"/>
+        <location filename="../qml/Settings.qml" line="2646"/>
         <source>RTS</source>
         <translation>RTS</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1145"/>
-        <location filename="../qml/Settings.qml" line="2643"/>
+        <location filename="../qml/Settings.qml" line="2645"/>
         <source>DTR</source>
         <translation>DTR</translation>
     </message>
@@ -4531,7 +4541,7 @@ para radios USB</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1274"/>
-        <location filename="../qml/Settings.qml" line="2717"/>
+        <location filename="../qml/Settings.qml" line="2719"/>
         <source>Control Port</source>
         <translation type="unfinished">Puerto de control</translation>
     </message>
@@ -4567,16 +4577,16 @@ para radios USB</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1372"/>
-        <location filename="../qml/Settings.qml" line="2892"/>
-        <location filename="../qml/Settings.qml" line="4069"/>
+        <location filename="../qml/Settings.qml" line="2894"/>
+        <location filename="../qml/Settings.qml" line="4071"/>
         <source>Username</source>
         <translation type="unfinished">Nombre de usuario</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="1389"/>
-        <location filename="../qml/Settings.qml" line="2893"/>
-        <location filename="../qml/Settings.qml" line="3353"/>
-        <location filename="../qml/Settings.qml" line="4079"/>
+        <location filename="../qml/Settings.qml" line="2895"/>
+        <location filename="../qml/Settings.qml" line="3355"/>
+        <location filename="../qml/Settings.qml" line="4081"/>
         <source>Password</source>
         <translation type="unfinished">Contraseña</translation>
     </message>
@@ -4744,7 +4754,7 @@ para radios USB</translation>
         <location filename="../qml/Settings.qml" line="1691"/>
         <location filename="../qml/Settings.qml" line="1711"/>
         <location filename="../qml/Settings.qml" line="1838"/>
-        <location filename="../qml/Settings.qml" line="4382"/>
+        <location filename="../qml/Settings.qml" line="4384"/>
         <source>None</source>
         <translation type="unfinished">Ninguno</translation>
     </message>
@@ -4856,7 +4866,7 @@ para radios USB</translation>
     <message>
         <location filename="../qml/Settings.qml" line="1697"/>
         <location filename="../qml/Settings.qml" line="1717"/>
-        <location filename="../qml/Settings.qml" line="3815"/>
+        <location filename="../qml/Settings.qml" line="3817"/>
         <source>Current</source>
         <translation type="unfinished">Actual</translation>
     </message>
@@ -5789,342 +5799,347 @@ No es el puerto CAT de la radio. El CW Sender manipula entonces este puerto en l
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
+        <source>Look for serial ports again, for example after plugging in the radio.</source>
+        <translation type="unfinished">Vuelve a buscar puertos serie, por ejemplo después de conectar la radio.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Settings.qml" line="2640"/>
         <source>Key Line</source>
         <translation type="unfinished">Línea de manipulación</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2653"/>
+        <location filename="../qml/Settings.qml" line="2655"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
         <translation type="unfinished">Debe coincidir con el ajuste de la propia radio. La otra línea se mantiene inactiva, porque las radios suelen usarla para PTT.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2679"/>
+        <location filename="../qml/Settings.qml" line="2681"/>
         <source>Enable</source>
         <translation type="unfinished">Permitir</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2686"/>
+        <location filename="../qml/Settings.qml" line="2688"/>
         <source>Disable local user controls when in use (restart required)</source>
         <translation type="unfinished">Desactive los controles de usuario locales cuando estén en uso (se requiere reiniciar)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2693"/>
+        <location filename="../qml/Settings.qml" line="2695"/>
         <source>Suppress serial port warnings</source>
         <translation type="unfinished">Suprimir las advertencias del puerto serie</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2698"/>
+        <location filename="../qml/Settings.qml" line="2700"/>
         <source>While the server is enabled, do not show a warning when the radio&apos;s serial port cannot be opened. wfview keeps retrying the port, for headless or unattended servers.</source>
         <translation type="unfinished">Mientras el servidor esté habilitado, no muestre una advertencia cuando no se pueda abrir el puerto serie de la radio. wfview sigue intentando conectarse al puerto, en el caso de servidores sin interfaz gráfica o desatendidos.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2706"/>
+        <location filename="../qml/Settings.qml" line="2708"/>
         <source>Server Setup</source>
         <translation type="unfinished">Configuración del servidor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2729"/>
+        <location filename="../qml/Settings.qml" line="2731"/>
         <source>CI-V Port</source>
         <translation type="unfinished">Puerto CI-V</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2729"/>
+        <location filename="../qml/Settings.qml" line="2731"/>
         <source>CAT Port</source>
         <translation type="unfinished">Puerto CAT</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2742"/>
+        <location filename="../qml/Settings.qml" line="2744"/>
         <source>Audio Port</source>
         <translation type="unfinished">Puerto de audio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2754"/>
+        <location filename="../qml/Settings.qml" line="2756"/>
         <source>Scope Port</source>
         <translation type="unfinished">Puerto de alcance</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2773"/>
+        <location filename="../qml/Settings.qml" line="2775"/>
         <source>Listen Interface</source>
         <translation type="unfinished">Interfaz de escucha</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2783"/>
+        <location filename="../qml/Settings.qml" line="2785"/>
         <source>Select the interface used by the built-in UDP server.</source>
         <translation type="unfinished">Seleccione la interfaz utilizada por el servidor UDP integrado.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2788"/>
+        <location filename="../qml/Settings.qml" line="2790"/>
         <source>Automatic prefers a non-loopback IPv4 address, then falls back to IPv6.</source>
         <translation type="unfinished">En modo automático, se prefiere una dirección IPv4 que no sea de bucle invertido, y en caso contrario se recurre a IPv6.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2796"/>
+        <location filename="../qml/Settings.qml" line="2798"/>
         <source>RX Audio Input</source>
         <translation type="unfinished">Entrada de audio RX</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2808"/>
+        <location filename="../qml/Settings.qml" line="2810"/>
         <source>TX Audio Output</source>
         <translation type="unfinished">Salida de audio TX</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2834"/>
+        <location filename="../qml/Settings.qml" line="2836"/>
         <source>Server uses the global audio system setting.</source>
         <translation type="unfinished">El servidor utiliza la configuración global del sistema de audio.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2842"/>
+        <location filename="../qml/Settings.qml" line="2844"/>
         <source>Users</source>
         <translation type="unfinished">Usuarios</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2870"/>
-        <location filename="../qml/Settings.qml" line="3310"/>
+        <location filename="../qml/Settings.qml" line="2872"/>
+        <location filename="../qml/Settings.qml" line="3312"/>
         <source>Remove</source>
         <translation type="unfinished">Eliminar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2894"/>
+        <location filename="../qml/Settings.qml" line="2896"/>
         <source>Access</source>
         <translation type="unfinished">Acceso</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2895"/>
-        <location filename="../qml/Settings.qml" line="3372"/>
-        <location filename="../qml/Settings.qml" line="4236"/>
+        <location filename="../qml/Settings.qml" line="2897"/>
+        <location filename="../qml/Settings.qml" line="3374"/>
+        <location filename="../qml/Settings.qml" line="4238"/>
         <source>Status</source>
         <translation type="unfinished">Estado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2948"/>
+        <location filename="../qml/Settings.qml" line="2950"/>
         <source>(saved)</source>
         <translation type="unfinished">(guardado)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2963"/>
+        <location filename="../qml/Settings.qml" line="2965"/>
         <source>Admin User</source>
         <translation type="unfinished">Usuario administrador</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2964"/>
+        <location filename="../qml/Settings.qml" line="2966"/>
         <source>Normal User</source>
         <translation type="unfinished">Usuario normal</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2965"/>
+        <location filename="../qml/Settings.qml" line="2967"/>
         <source>Normal with no TX</source>
         <translation type="unfinished">Normal sin TX</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2966"/>
+        <location filename="../qml/Settings.qml" line="2968"/>
         <source>Disabled</source>
         <translation type="unfinished">Desactivado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2983"/>
+        <location filename="../qml/Settings.qml" line="2985"/>
         <source>Status: %1</source>
         <translation type="unfinished">Estado: %1</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2997"/>
+        <location filename="../qml/Settings.qml" line="2999"/>
         <source>Press &quot;Connect to Radio&quot; before starting the server</source>
         <translation type="unfinished">Pulse &quot;Conectar a la radio&quot; antes de iniciar el servidor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="2998"/>
+        <location filename="../qml/Settings.qml" line="3000"/>
         <source>To make changes to the server settings, first press &quot;Disconnect from Radio&quot;</source>
         <translation type="unfinished">Para modificar la configuración del servidor, primero pulse &quot;Desconectar de la radio&quot;</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3008"/>
+        <location filename="../qml/Settings.qml" line="3010"/>
         <source>Server Status</source>
         <translation type="unfinished">Estado del servidor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3017"/>
+        <location filename="../qml/Settings.qml" line="3019"/>
         <source>Status:</source>
         <translation type="unfinished">Estado:</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3026"/>
+        <location filename="../qml/Settings.qml" line="3028"/>
         <source>Users logged in:</source>
         <translation type="unfinished">Usuarios conectados:</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3029"/>
+        <location filename="../qml/Settings.qml" line="3031"/>
         <source>Logins since start:</source>
         <translation type="unfinished">Inicios de sesión desde el inicio:</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3052"/>
+        <location filename="../qml/Settings.qml" line="3054"/>
         <source>Enable RigCtld</source>
         <translation type="unfinished">Habilitar RigCtld</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3056"/>
+        <location filename="../qml/Settings.qml" line="3058"/>
         <source>wfview can run a rigctld-compatible server, which provides basic information to third-party tools such as loggers and digital mode applications.
 wfview&apos;s rigctld-compatible server can accept multiple connections at the same time.</source>
         <translation type="unfinished">wfview puede ejecutar un servidor compatible con rigctld, que proporciona información básica a herramientas de terceros, como registradores de datos y aplicaciones de modo digital.
 El servidor compatible con rigctld de wfview puede aceptar múltiples conexiones al mismo tiempo.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3061"/>
-        <location filename="../qml/Settings.qml" line="3351"/>
-        <location filename="../qml/Settings.qml" line="4057"/>
-        <location filename="../qml/Settings.qml" line="4169"/>
+        <location filename="../qml/Settings.qml" line="3063"/>
+        <location filename="../qml/Settings.qml" line="3353"/>
+        <location filename="../qml/Settings.qml" line="4059"/>
+        <location filename="../qml/Settings.qml" line="4171"/>
         <source>Port</source>
         <translation type="unfinished">Puerto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3075"/>
+        <location filename="../qml/Settings.qml" line="3077"/>
         <source>The default rigctld port for most applications is 4532.
 wfview recommends using 4533 so as not to conflict with any other rigctld you may already be using.</source>
         <translation type="unfinished">El puerto rigctld predeterminado para la mayoría de las aplicaciones es el 4532.
 wfview recomienda usar el puerto 4533 para evitar conflictos con cualquier otro rigctld que ya esté utilizando.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3081"/>
+        <location filename="../qml/Settings.qml" line="3083"/>
         <source>Report frequencies as integers</source>
         <translation type="unfinished">Informar las frecuencias como números enteros</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3085"/>
+        <location filename="../qml/Settings.qml" line="3087"/>
         <source>Alters the response of wfview&apos;s rigctld server to the &apos;f&apos;, &apos;i&apos; and &apos;k&apos; commands, reporting frequencies as integers rather than as numbers with decimals</source>
         <translation type="unfinished">Modifica la respuesta del servidor rigctld de wfview a los comandos &apos;f&apos;, &apos;i&apos; y &apos;k&apos;, informando las frecuencias como números enteros en lugar de números con decimales</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3093"/>
+        <location filename="../qml/Settings.qml" line="3095"/>
         <source>Virtual Serial Port</source>
         <translation type="unfinished">Puerto serie virtual</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3100"/>
+        <location filename="../qml/Settings.qml" line="3102"/>
         <source>Define a virtual serial port. On Windows: loopback device for other programs. On Linux/macOS: pseudo-terminal.</source>
         <translation type="unfinished">Define un puerto serie virtual. En Windows: dispositivo de bucle invertido para otros programas. En Linux/macOS: pseudoterminal.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3114"/>
+        <location filename="../qml/Settings.qml" line="3116"/>
         <source>Use &quot;none&quot; to disable the virtual serial bridge.</source>
         <translation type="unfinished">Utilice &quot;none&quot; para deshabilitar el puente serie virtual.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3118"/>
+        <location filename="../qml/Settings.qml" line="3120"/>
         <source>Use command queue</source>
         <translation type="unfinished">Utilizar la cola de comandos</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3123"/>
+        <location filename="../qml/Settings.qml" line="3125"/>
         <source>Route virtual serial CAT commands through wfview&apos;s command queue where possible.</source>
         <translation type="unfinished">Enrutar los comandos CAT serie virtuales a través de la cola de comandos de wfview siempre que sea posible.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3130"/>
+        <location filename="../qml/Settings.qml" line="3132"/>
         <source>TCP Server Port</source>
         <translation type="unfinished">Puerto del servidor TCP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3139"/>
+        <location filename="../qml/Settings.qml" line="3141"/>
         <source>Enter port for TCP server, 0 = disabled (restart required if changed)</source>
         <translation type="unfinished">Introduzca el puerto para el servidor TCP ; 0 = deshabilitado (se requiere reiniciar si se modifica)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3145"/>
+        <location filename="../qml/Settings.qml" line="3147"/>
         <source>TCI Server Port</source>
         <translation type="unfinished">Puerto del servidor TCI</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3154"/>
+        <location filename="../qml/Settings.qml" line="3156"/>
         <source>Enter port for TCI server, 0 = disabled</source>
         <translation type="unfinished">Introduzca el puerto para el servidor TCI ; 0 = deshabilitado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3160"/>
+        <location filename="../qml/Settings.qml" line="3162"/>
         <source>Waterfall Format</source>
         <translation type="unfinished">Formato cascada</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3164"/>
+        <location filename="../qml/Settings.qml" line="3166"/>
         <source>Default</source>
         <translation type="unfinished">Por defecto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3165"/>
+        <location filename="../qml/Settings.qml" line="3167"/>
         <source>Single (network)</source>
         <translation type="unfinished">Único (red)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3166"/>
+        <location filename="../qml/Settings.qml" line="3168"/>
         <source>Multi (serial)</source>
         <translation type="unfinished">Multi (serie)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3173"/>
+        <location filename="../qml/Settings.qml" line="3175"/>
         <source>Only change this if you are absolutely sure you need it (connecting to N1MM+ or similar)</source>
         <translation type="unfinished">Solo cambie esto si está absolutamente seguro de que lo necesita (para conectarse a N1MM + o similar)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3196"/>
+        <location filename="../qml/Settings.qml" line="3198"/>
         <source>Enable USB Controllers</source>
         <translation type="unfinished">Habilitar controladores USB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3204"/>
+        <location filename="../qml/Settings.qml" line="3206"/>
         <source>Reset Buttons</source>
         <translation type="unfinished">Botones de reinicio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3212"/>
+        <location filename="../qml/Settings.qml" line="3214"/>
         <source>Only reset buttons/commands if you have issues.</source>
         <translation type="unfinished">Solo reinicia los botones/comandos si tienes algún problema.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3239"/>
+        <location filename="../qml/Settings.qml" line="3241"/>
         <source>This page contains configuration for DX Cluster, either UDP style broadcast (from N1MM+/DXlog) or TCP connection to your favourite cluster</source>
         <translation type="unfinished">Esta página contiene la configuración para DX Cluster, ya sea mediante difusión estilo UDP (desde N1MM +/DXlog) o conexión TCP a su clúster preferido</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3245"/>
-        <location filename="../qml/Settings.qml" line="3253"/>
+        <location filename="../qml/Settings.qml" line="3247"/>
+        <location filename="../qml/Settings.qml" line="3255"/>
         <source>Enable Cluster Connections (TCP)</source>
         <translation type="unfinished">Habilitar conexiones de clúster (TCP)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3318"/>
+        <location filename="../qml/Settings.qml" line="3320"/>
         <source>Connect</source>
         <translation type="unfinished">Conectar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3330"/>
+        <location filename="../qml/Settings.qml" line="3332"/>
         <source>Disconnect</source>
         <translation type="unfinished">Desconectar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3350"/>
+        <location filename="../qml/Settings.qml" line="3352"/>
         <source>Server</source>
         <translation type="unfinished">Servidor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3352"/>
+        <location filename="../qml/Settings.qml" line="3354"/>
         <source>User</source>
         <translation type="unfinished">Usuario</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3356"/>
+        <location filename="../qml/Settings.qml" line="3358"/>
         <source>Spot Lifetime (sec)</source>
         <translation type="unfinished">Duración del spot (segundos)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3360"/>
+        <location filename="../qml/Settings.qml" line="3362"/>
         <source>How many seconds a spot is displayed</source>
         <translation type="unfinished">Cuántos segundos se muestra un anuncio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3365"/>
+        <location filename="../qml/Settings.qml" line="3367"/>
         <source>Activate</source>
         <translation type="unfinished">Activar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3369"/>
+        <location filename="../qml/Settings.qml" line="3371"/>
         <source>Check the one server you wish to connect to
 All other servers listed are not connected to,
 but are recorded here for your convenience</source>
@@ -6133,64 +6148,64 @@ Todos los demás servidores enumerados no están conectados.
 pero se registran aquí para su comodidad</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3493"/>
+        <location filename="../qml/Settings.qml" line="3495"/>
         <source>Not connected</source>
         <translation type="unfinished">No conectado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3511"/>
-        <location filename="../qml/Settings.qml" line="3516"/>
+        <location filename="../qml/Settings.qml" line="3513"/>
+        <location filename="../qml/Settings.qml" line="3518"/>
         <source>Receive spots over UDP Broadcast</source>
         <translation type="unfinished">Reciba anuncios a través de la transmisión UDP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3521"/>
+        <location filename="../qml/Settings.qml" line="3523"/>
         <source>Receives spots over broadcasted UDP data
 Format is XML using &lt;spot&gt;</source>
         <translation type="unfinished">Recibe puntos a través de datos UDP transmitidos
 El formato es XML usando &lt;spot&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3528"/>
+        <location filename="../qml/Settings.qml" line="3530"/>
         <source>UDP Port</source>
         <translation type="unfinished">Puerto UDP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3540"/>
+        <location filename="../qml/Settings.qml" line="3542"/>
         <source>UDP Spot Lifetime (sec)</source>
         <translation type="unfinished">Tiempo de vida UDP Spot (segundos)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3546"/>
+        <location filename="../qml/Settings.qml" line="3548"/>
         <source>Expire spots received over UDP in this many seconds
 When unchecked, only the UDP packets may indicate a spot expiration</source>
         <translation type="unfinished">Caducidad de los espacios recibidos a través de UDP en esta cantidad de segundos
 Cuando no está marcada esta opción, solo los paquetes UDP pueden indicar la expiración de un espacio reservado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3608"/>
+        <location filename="../qml/Settings.qml" line="3610"/>
         <source>Show Skimmer Spots</source>
         <translation type="unfinished">Mostrar puntos de Skimmer</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3613"/>
+        <location filename="../qml/Settings.qml" line="3615"/>
         <source>Ask the cluster server to also send CW Skimmer and Reverse Beacon Network spots
 (sends set/skimmer). Not every cluster server supports this.</source>
         <translation type="unfinished">Solicite al servidor del clúster que también envíe señales CW Skimmer y de la red de balizas inversas.
 (envía conjunto/skimmer). No todos los servidores del clúster admiten esto.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3617"/>
+        <location filename="../qml/Settings.qml" line="3619"/>
         <source>Clear Output</source>
         <translation type="unfinished">Borrar salida</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3622"/>
+        <location filename="../qml/Settings.qml" line="3624"/>
         <source>Spots begin to fade at this percent lifetime</source>
         <translation type="unfinished">Las manchas comienzan a desvanecerse en este porcentaje de vida útil</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3641"/>
+        <location filename="../qml/Settings.qml" line="3643"/>
         <source>Spots begin to linearly fade out at this percent of total spot lifetime
 Zero percent = begin to fade over entire lifetime
 Fifty percent = begin to fade when half way to expiration
@@ -6201,723 +6216,723 @@ Cincuenta por ciento = comienza a desvanecerse cuando se acerca la mitad del pla
 Noventa por ciento = comienza a desvanecerse cuando solo queda un diez por ciento de vida</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3687"/>
+        <location filename="../qml/Settings.qml" line="3689"/>
         <source>Configure keyboard shortcuts. wfview commands affect the application; radio commands send rig function commands.</source>
         <translation type="unfinished">Configure los atajos de teclado. Los comandos wfview afectan a la aplicación; los comandos de radio envían comandos de función del equipo.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3694"/>
-        <location filename="../qml/Settings.qml" line="3831"/>
+        <location filename="../qml/Settings.qml" line="3696"/>
+        <location filename="../qml/Settings.qml" line="3833"/>
         <source>Add Shortcut</source>
         <translation type="unfinished">Agregar acceso directo</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3698"/>
+        <location filename="../qml/Settings.qml" line="3700"/>
         <source>Reset Defaults</source>
         <translation type="unfinished">Restablecer valores predeterminados</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3705"/>
+        <location filename="../qml/Settings.qml" line="3707"/>
         <source>Shortcut Bindings</source>
         <translation type="unfinished">Enlaces de acceso directo</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3715"/>
+        <location filename="../qml/Settings.qml" line="3717"/>
         <source>On</source>
         <translation type="unfinished">En</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3716"/>
+        <location filename="../qml/Settings.qml" line="3718"/>
         <source>Shortcut</source>
         <translation type="unfinished">Atajo</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3717"/>
+        <location filename="../qml/Settings.qml" line="3719"/>
         <source>wfview Command</source>
         <translation type="unfinished">Comando wfview</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3718"/>
+        <location filename="../qml/Settings.qml" line="3720"/>
         <source>Radio Command</source>
         <translation type="unfinished">Comando de radio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3719"/>
+        <location filename="../qml/Settings.qml" line="3721"/>
         <source>Action</source>
         <translation type="unfinished">Acción</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3720"/>
+        <location filename="../qml/Settings.qml" line="3722"/>
         <source>Value</source>
         <translation type="unfinished">Valor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3721"/>
+        <location filename="../qml/Settings.qml" line="3723"/>
         <source>Receiver</source>
         <translation type="unfinished">Receptor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3748"/>
+        <location filename="../qml/Settings.qml" line="3750"/>
         <source>Ctrl+D</source>
         <translation type="unfinished">Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3752"/>
+        <location filename="../qml/Settings.qml" line="3754"/>
         <source>Qt shortcut text, for example Ctrl+D, Alt+F, or Shift+F10.</source>
         <translation type="unfinished">Texto de acceso directo Qt , por ejemplo Ctrl+D, Alt+F o Shift+ F10 .</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3789"/>
+        <location filename="../qml/Settings.qml" line="3791"/>
         <source>Trigger</source>
         <translation type="unfinished">Desencadenar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3790"/>
+        <location filename="../qml/Settings.qml" line="3792"/>
         <source>Absolute</source>
         <translation type="unfinished">Absoluto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3791"/>
+        <location filename="../qml/Settings.qml" line="3793"/>
         <source>Increase</source>
         <translation type="unfinished">Aumentar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3792"/>
+        <location filename="../qml/Settings.qml" line="3794"/>
         <source>Decrease</source>
         <translation type="unfinished">Disminuir</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3816"/>
+        <location filename="../qml/Settings.qml" line="3818"/>
         <source>Main</source>
         <translation type="unfinished">Principal</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3817"/>
+        <location filename="../qml/Settings.qml" line="3819"/>
         <source>Sub</source>
         <translation type="unfinished">Sub</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3835"/>
+        <location filename="../qml/Settings.qml" line="3837"/>
         <source>Duplicate Shortcut</source>
         <translation type="unfinished">Acceso directo duplicado</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3839"/>
+        <location filename="../qml/Settings.qml" line="3841"/>
         <source>Delete Shortcut</source>
         <translation type="unfinished">Eliminar acceso directo</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3851"/>
+        <location filename="../qml/Settings.qml" line="3853"/>
         <source>For radio shortcuts, use Absolute for fixed values and Increase or Decrease for step changes.</source>
         <translation type="unfinished">Para los accesos directos de radio, utilice Absoluto para valores fijos y Aumentar o Disminuir para cambios escalonados.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3884"/>
+        <location filename="../qml/Settings.qml" line="3886"/>
         <source>A macro sends up to %1 commands in order. Each macro is also a wfview command on the Shortcuts page, and can show a button on the main window.</source>
         <translation type="unfinished">Una macro envía hasta %1 comandos en orden. Cada macro también es un comando wfview en la página de Accesos directos y puede mostrar un botón en la ventana principal.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3892"/>
+        <location filename="../qml/Settings.qml" line="3894"/>
         <source>Add Macro</source>
         <translation type="unfinished">Agregar macro</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3900"/>
+        <location filename="../qml/Settings.qml" line="3902"/>
         <source>Minimum time between commands (ms)</source>
         <translation type="unfinished">Tiempo mínimo entre comandos (ms)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3909"/>
+        <location filename="../qml/Settings.qml" line="3911"/>
         <source>No step is followed by a shorter wait than this, whatever its own delay.</source>
         <translation type="unfinished">Ningún paso va seguido de una espera más corta que esta, independientemente de la demora que suponga.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3924"/>
+        <location filename="../qml/Settings.qml" line="3926"/>
         <source>#</source>
         <translation>#</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3925"/>
+        <location filename="../qml/Settings.qml" line="3927"/>
         <source>Name</source>
         <translation type="unfinished">Nombre</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3926"/>
+        <location filename="../qml/Settings.qml" line="3928"/>
         <source>Steps</source>
         <translation type="unfinished">Pasos</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3927"/>
+        <location filename="../qml/Settings.qml" line="3929"/>
         <source>Show Button</source>
         <translation type="unfinished">Mostrar botón</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3935"/>
+        <location filename="../qml/Settings.qml" line="3937"/>
         <source>No macros yet. Use Add Macro to create one.</source>
         <translation type="unfinished">Aún no hay macros. Usa la opción &quot;Agregar macro&quot; para crear una.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="3969"/>
+        <location filename="../qml/Settings.qml" line="3971"/>
         <source>Edit</source>
         <translation type="unfinished">Editar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4006"/>
+        <location filename="../qml/Settings.qml" line="4008"/>
         <source>This page contains experimental features. Use at your own risk.</source>
         <translation type="unfinished">Esta página contiene funciones experimentales. Úsela bajo su propia responsabilidad.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4012"/>
+        <location filename="../qml/Settings.qml" line="4014"/>
         <source>Enable Rig Creator Feature (use with care)</source>
         <translation type="unfinished">Habilitar la función Creador de Rigs (usar con precaución)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4014"/>
+        <location filename="../qml/Settings.qml" line="4016"/>
         <source>Rig creator allows changing of all rig features and adding new rig profiles</source>
         <translation type="unfinished">El creador de rigs permite cambiar todas las características del rig y agregar nuevos perfiles de rig</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4020"/>
+        <location filename="../qml/Settings.qml" line="4022"/>
         <source>wfshare Remote Access</source>
         <translation type="unfinished">Acceso remoto wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4031"/>
+        <location filename="../qml/Settings.qml" line="4033"/>
         <source>Enable wfshare</source>
         <translation type="unfinished">Habilitar wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4039"/>
+        <location filename="../qml/Settings.qml" line="4041"/>
         <source>Direct point-to-point mode</source>
         <translation type="unfinished">Modo directo punto a punto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4046"/>
+        <location filename="../qml/Settings.qml" line="4048"/>
         <source>Remote host</source>
         <translation type="unfinished">Host remoto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4051"/>
+        <location filename="../qml/Settings.qml" line="4053"/>
         <source>server hostname or IP</source>
         <translation type="unfinished">nombre de host o IP del servidor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4051"/>
+        <location filename="../qml/Settings.qml" line="4053"/>
         <source>pbx.wfshare.org</source>
         <translation type="unfinished">pbx.wfshare.org</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4055"/>
+        <location filename="../qml/Settings.qml" line="4057"/>
         <source>Remote wfserver address</source>
         <translation type="unfinished">Dirección remota wfserver</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4055"/>
+        <location filename="../qml/Settings.qml" line="4057"/>
         <source>wfshare relay hostname</source>
         <translation type="unfinished">nombre de host de retransmisión wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4067"/>
+        <location filename="../qml/Settings.qml" line="4069"/>
         <source>Default wfshare port is 4569</source>
         <translation type="unfinished">El puerto wfshare predeterminado es 4569</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4077"/>
+        <location filename="../qml/Settings.qml" line="4079"/>
         <source>wfshare account username</source>
         <translation type="unfinished">Nombre de usuario de la cuenta wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4088"/>
+        <location filename="../qml/Settings.qml" line="4090"/>
         <source>wfshare account password</source>
         <translation type="unfinished">contraseña de la cuenta wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4090"/>
+        <location filename="../qml/Settings.qml" line="4092"/>
         <source>Station ID</source>
         <translation type="unfinished">ID de la estación</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4095"/>
+        <location filename="../qml/Settings.qml" line="4097"/>
         <source>remote station</source>
         <translation type="unfinished">estación remota</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4099"/>
+        <location filename="../qml/Settings.qml" line="4101"/>
         <source>Not used in direct mode</source>
         <translation type="unfinished">No se utiliza en modo directo</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4099"/>
+        <location filename="../qml/Settings.qml" line="4101"/>
         <source>Remote station or PBX route to call</source>
         <translation type="unfinished">Ruta de estación remota o PBX para realizar la llamada</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4105"/>
+        <location filename="../qml/Settings.qml" line="4107"/>
         <source>Test wfshare Connection</source>
         <translation type="unfinished">Prueba de conexión wfshare</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4121"/>
+        <location filename="../qml/Settings.qml" line="4123"/>
         <source>Handshake progress is written to the application log.</source>
         <translation type="unfinished">El progreso del protocolo de enlace se registra en el archivo de registro de la aplicación.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4131"/>
+        <location filename="../qml/Settings.qml" line="4133"/>
         <source>MCP Diagnostics Server</source>
         <translation type="unfinished">Servidor de diagnóstico MCP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4141"/>
+        <location filename="../qml/Settings.qml" line="4143"/>
         <source>MCP Disabled in this build</source>
         <translation type="unfinished">MCP deshabilitado en esta compilación</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4149"/>
+        <location filename="../qml/Settings.qml" line="4151"/>
         <source>Enable MCP</source>
         <translation type="unfinished">Habilitar MCP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4154"/>
+        <location filename="../qml/Settings.qml" line="4156"/>
         <source>Runs a Model Context Protocol (MCP) server inside wfview, so an AI assistant can read live diagnostics: connection state, rig capabilities, the command queue and cache, audio configuration and levels, meters, spectrum, radio and network traffic, the log, settings and main-thread health. Not saved; use --use-mcp to start with it on.</source>
         <translation type="unfinished">Ejecuta un servidor del Protocolo de Contexto de Modelo (MCP) dentro de wfview , para que un asistente AI pueda leer diagnósticos en tiempo real: estado de la conexión, capacidades del equipo, cola y caché de comandos, configuración y niveles de audio, medidores, espectro, tráfico de radio y red, registro, configuración y estado del hilo principal. No se guarda; use --use-mcp para iniciarlo con esta opción activada.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4160"/>
+        <location filename="../qml/Settings.qml" line="4162"/>
         <source>MCP Write Access</source>
         <translation type="unfinished">Acceso de escritura MCP</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4165"/>
+        <location filename="../qml/Settings.qml" line="4167"/>
         <source>Also lets MCP clients change the radio and wfview: frequency, mode, settings, raw commands and PTT (transmit). Leave off for read-only diagnostics.</source>
         <translation type="unfinished">También permite a los clientes MCP cambiar la radio y wfview : frecuencia, modo, configuración, comandos sin procesar y PTT (transmisión). Desactive esta opción para diagnósticos de solo lectura.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4178"/>
+        <location filename="../qml/Settings.qml" line="4180"/>
         <source>Default MCP port is 8765</source>
         <translation type="unfinished">El puerto MCP predeterminado es 8765</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4181"/>
+        <location filename="../qml/Settings.qml" line="4183"/>
         <source>Bind address</source>
         <translation type="unfinished">Dirección de enlace</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4192"/>
+        <location filename="../qml/Settings.qml" line="4194"/>
         <source>Local only (127.0.0.1)</source>
         <translation type="unfinished">Solo para usuarios locales (127.0.0.1)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4197"/>
+        <location filename="../qml/Settings.qml" line="4199"/>
         <source>All (0.0.0.0, needs a token)</source>
         <translation type="unfinished">Todos (0.0.0.0, necesita un token)</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4205"/>
+        <location filename="../qml/Settings.qml" line="4207"/>
         <source>Specific address</source>
         <translation type="unfinished">Dirección específica</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4217"/>
+        <location filename="../qml/Settings.qml" line="4219"/>
         <source>IP address of a local interface</source>
         <translation type="unfinished">Dirección IP de una interfaz local</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4223"/>
+        <location filename="../qml/Settings.qml" line="4225"/>
         <source>Token</source>
         <translation type="unfinished">Simbólico</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4230"/>
+        <location filename="../qml/Settings.qml" line="4232"/>
         <source>optional for local only</source>
         <translation type="unfinished">Opcional solo para uso local</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4233"/>
+        <location filename="../qml/Settings.qml" line="4235"/>
         <source>Clients send it as a Bearer token</source>
         <translation type="unfinished">Los clientes lo envían como un token de portador</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4251"/>
+        <location filename="../qml/Settings.qml" line="4253"/>
         <source>Check the log for detailed information.</source>
         <translation type="unfinished">Consulte el registro para obtener información detallada.</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4261"/>
+        <location filename="../qml/Settings.qml" line="4263"/>
         <source>Debug</source>
         <translation type="unfinished">Depurar</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4288"/>
+        <location filename="../qml/Settings.qml" line="4290"/>
         <source>Transmit</source>
         <translation type="unfinished">Transmitir</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4293"/>
-        <location filename="../qml/Settings.qml" line="4364"/>
+        <location filename="../qml/Settings.qml" line="4295"/>
+        <location filename="../qml/Settings.qml" line="4366"/>
         <source>Bypass</source>
         <translation type="unfinished">Derivación</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4294"/>
+        <location filename="../qml/Settings.qml" line="4296"/>
         <source>EQ before compressor</source>
         <translation type="unfinished">EQ antes del compresor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4295"/>
+        <location filename="../qml/Settings.qml" line="4297"/>
         <source>Compressor</source>
         <translation type="unfinished">Compresor</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4296"/>
-        <location filename="../qml/Settings.qml" line="4366"/>
+        <location filename="../qml/Settings.qml" line="4298"/>
+        <location filename="../qml/Settings.qml" line="4368"/>
         <source>Equalizer</source>
         <translation type="unfinished">Igualada</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4297"/>
+        <location filename="../qml/Settings.qml" line="4299"/>
         <source>Noise gate</source>
         <translation type="unfinished">Puerta de ruido</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4298"/>
+        <location filename="../qml/Settings.qml" line="4300"/>
         <source>Sidetone</source>
         <translation type="unfinished">Tono lateral</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4299"/>
-        <location filename="../qml/Settings.qml" line="4367"/>
+        <location filename="../qml/Settings.qml" line="4301"/>
+        <location filename="../qml/Settings.qml" line="4369"/>
         <source>Spectrum</source>
         <translation type="unfinished">Espectro</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4304"/>
+        <location filename="../qml/Settings.qml" line="4306"/>
         <source>Transmit Levels</source>
         <translation type="unfinished">Niveles de transmisión</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4308"/>
+        <location filename="../qml/Settings.qml" line="4310"/>
         <source>Input gain dB</source>
         <translation type="unfinished">Ganancia de entrada dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4309"/>
-        <location filename="../qml/Settings.qml" line="4422"/>
+        <location filename="../qml/Settings.qml" line="4311"/>
+        <location filename="../qml/Settings.qml" line="4424"/>
         <source>Output gain dB</source>
         <translation type="unfinished">Ganancia de salida dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4310"/>
+        <location filename="../qml/Settings.qml" line="4312"/>
         <source>Comp peak dB</source>
         <translation type="unfinished">Pico de compresión dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4311"/>
+        <location filename="../qml/Settings.qml" line="4313"/>
         <source>Comp release s</source>
         <translation type="unfinished">Lanzamiento de Comp s</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4312"/>
+        <location filename="../qml/Settings.qml" line="4314"/>
         <source>Fast ratio</source>
         <translation type="unfinished">Relación rápida</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4313"/>
+        <location filename="../qml/Settings.qml" line="4315"/>
         <source>Slow ratio</source>
         <translation type="unfinished">Relación lenta</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4314"/>
+        <location filename="../qml/Settings.qml" line="4316"/>
         <source>Sidetone level</source>
         <translation type="unfinished">Nivel de tono lateral</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4319"/>
+        <location filename="../qml/Settings.qml" line="4321"/>
         <source>Transmit Gate</source>
         <translation type="unfinished">Puerta de transmisión</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4323"/>
+        <location filename="../qml/Settings.qml" line="4325"/>
         <source>Threshold dB</source>
         <translation type="unfinished">Umbral dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4324"/>
+        <location filename="../qml/Settings.qml" line="4326"/>
         <source>Attack ms</source>
         <translation type="unfinished">Ataque ms</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4325"/>
+        <location filename="../qml/Settings.qml" line="4327"/>
         <source>Hold ms</source>
         <translation type="unfinished">Sostenga ms</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4326"/>
+        <location filename="../qml/Settings.qml" line="4328"/>
         <source>Decay ms</source>
         <translation type="unfinished">Decaimiento ms</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4327"/>
+        <location filename="../qml/Settings.qml" line="4329"/>
         <source>Range dB</source>
         <translation type="unfinished">Rango dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4328"/>
+        <location filename="../qml/Settings.qml" line="4330"/>
         <source>LF cutoff Hz</source>
         <translation type="unfinished">Frecuencia de corte LF Hz</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4329"/>
+        <location filename="../qml/Settings.qml" line="4331"/>
         <source>HF cutoff Hz</source>
         <translation type="unfinished">Frecuencia de corte HF Hz</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4330"/>
-        <location filename="../qml/Settings.qml" line="4423"/>
+        <location filename="../qml/Settings.qml" line="4332"/>
+        <location filename="../qml/Settings.qml" line="4425"/>
         <source>Spectrum FPS</source>
         <translation type="unfinished">Spectrum FPS</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4335"/>
+        <location filename="../qml/Settings.qml" line="4337"/>
         <source>Transmit EQ</source>
         <translation type="unfinished">EQ de transmisión</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4342"/>
+        <location filename="../qml/Settings.qml" line="4344"/>
         <source>Band </source>
         <translation type="unfinished">Banda </translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4359"/>
+        <location filename="../qml/Settings.qml" line="4361"/>
         <source>Receive</source>
         <translation type="unfinished">Recibir</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4365"/>
+        <location filename="../qml/Settings.qml" line="4367"/>
         <source>Noise reduction</source>
         <translation type="unfinished">Reducción de ruido</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4368"/>
+        <location filename="../qml/Settings.qml" line="4370"/>
         <source>Speex AGC</source>
         <translation type="unfinished">Speex AGC</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4369"/>
+        <location filename="../qml/Settings.qml" line="4371"/>
         <source>Speex VAD</source>
         <translation type="unfinished">VAD Speex</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4374"/>
+        <location filename="../qml/Settings.qml" line="4376"/>
         <source>Receive Noise Reduction</source>
         <translation type="unfinished">Reducción de ruido de recepción</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4379"/>
+        <location filename="../qml/Settings.qml" line="4381"/>
         <source>NR mode</source>
         <translation type="unfinished">Modo NR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4383"/>
+        <location filename="../qml/Settings.qml" line="4385"/>
         <source>Speex</source>
         <translation type="unfinished">Speex</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4384"/>
+        <location filename="../qml/Settings.qml" line="4386"/>
         <source>ANR</source>
         <translation>ANR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4388"/>
+        <location filename="../qml/Settings.qml" line="4390"/>
         <source>Channel</source>
         <translation type="unfinished">Canal</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4391"/>
+        <location filename="../qml/Settings.qml" line="4393"/>
         <source>Auto</source>
         <translation type="unfinished">Auto</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4392"/>
+        <location filename="../qml/Settings.qml" line="4394"/>
         <source>Left</source>
         <translation type="unfinished">Izquierda</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4393"/>
+        <location filename="../qml/Settings.qml" line="4395"/>
         <source>Right</source>
         <translation type="unfinished">Bien</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4394"/>
+        <location filename="../qml/Settings.qml" line="4396"/>
         <source>Mono sum</source>
         <translation type="unfinished">Mono suma</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4398"/>
+        <location filename="../qml/Settings.qml" line="4400"/>
         <source>Collect ANR</source>
         <translation type="unfinished">Recoger ANR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4399"/>
+        <location filename="../qml/Settings.qml" line="4401"/>
         <source>Stop Collect</source>
         <translation type="unfinished">Detener Recoger</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4401"/>
+        <location filename="../qml/Settings.qml" line="4403"/>
         <source>Speex suppression</source>
         <translation type="unfinished">Supresión de Speex</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4402"/>
+        <location filename="../qml/Settings.qml" line="4404"/>
         <source>Speex bands</source>
         <translation type="unfinished">Bandas Speex</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4403"/>
+        <location filename="../qml/Settings.qml" line="4405"/>
         <source>Frame ms</source>
         <translation type="unfinished">Marco ms</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4404"/>
+        <location filename="../qml/Settings.qml" line="4406"/>
         <source>AGC level</source>
         <translation type="unfinished">Nivel AGC</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4405"/>
+        <location filename="../qml/Settings.qml" line="4407"/>
         <source>AGC max dB</source>
         <translation type="unfinished">AGC máx. dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4406"/>
+        <location filename="../qml/Settings.qml" line="4408"/>
         <source>VAD start %</source>
         <translation type="unfinished">% de inicio VAD</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4407"/>
+        <location filename="../qml/Settings.qml" line="4409"/>
         <source>VAD continue %</source>
         <translation type="unfinished">VAD continúa %</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4408"/>
+        <location filename="../qml/Settings.qml" line="4410"/>
         <source>SNR decay</source>
         <translation type="unfinished">Decaimiento SNR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4409"/>
+        <location filename="../qml/Settings.qml" line="4411"/>
         <source>Noise update</source>
         <translation type="unfinished">Actualización de ruido</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4410"/>
+        <location filename="../qml/Settings.qml" line="4412"/>
         <source>Prior base</source>
         <translation type="unfinished">Base previa</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4411"/>
+        <location filename="../qml/Settings.qml" line="4413"/>
         <source>ANR reduction dB</source>
         <translation type="unfinished">reducción ANR dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4412"/>
+        <location filename="../qml/Settings.qml" line="4414"/>
         <source>ANR sensitivity</source>
         <translation type="unfinished">Sensibilidad ANR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4413"/>
+        <location filename="../qml/Settings.qml" line="4415"/>
         <source>ANR smoothing</source>
         <translation type="unfinished">Suavizado ANR</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4418"/>
+        <location filename="../qml/Settings.qml" line="4420"/>
         <source>Receive Output and EQ</source>
         <translation type="unfinished">Salida de recepción y EQ</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4428"/>
+        <location filename="../qml/Settings.qml" line="4430"/>
         <source>EQ band </source>
         <translation type="unfinished">banda EQ </translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4429"/>
+        <location filename="../qml/Settings.qml" line="4431"/>
         <source>Gain dB</source>
         <translation type="unfinished">Ganancia dB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4430"/>
+        <location filename="../qml/Settings.qml" line="4432"/>
         <source>Freq Hz</source>
         <translation type="unfinished">Frecuencia Hz</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4431"/>
+        <location filename="../qml/Settings.qml" line="4433"/>
         <source>Q</source>
         <translation type="unfinished">Q</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4450"/>
+        <location filename="../qml/Settings.qml" line="4452"/>
         <source>Save Settings</source>
         <translation type="unfinished">Guardar configuración</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4457"/>
+        <location filename="../qml/Settings.qml" line="4459"/>
         <source>Revert to Default</source>
         <translation type="unfinished">Volver a la configuración predeterminada</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4467"/>
+        <location filename="../qml/Settings.qml" line="4469"/>
         <source>Connect to Radio</source>
         <translation type="unfinished">Conéctate a la radio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4469"/>
+        <location filename="../qml/Settings.qml" line="4471"/>
         <source>Cancel Connection</source>
         <translation type="unfinished">Cancelar conexión</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4471"/>
+        <location filename="../qml/Settings.qml" line="4473"/>
         <source>Disconnect from Radio</source>
         <translation type="unfinished">Desconectar de la radio</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4471"/>
+        <location filename="../qml/Settings.qml" line="4473"/>
         <source>Unknown status!</source>
         <translation type="unfinished">¡Estado desconocido!</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4486"/>
+        <location filename="../qml/Settings.qml" line="4488"/>
         <source>Reset USB controllers</source>
         <translation type="unfinished">Reiniciar controladores USB</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4503"/>
+        <location filename="../qml/Settings.qml" line="4505"/>
         <source>Are you sure you wish to reset the USB controllers?</source>
         <translation type="unfinished">¿Está seguro de que desea reiniciar los controladores USB ?</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4514"/>
+        <location filename="../qml/Settings.qml" line="4516"/>
         <source>Manual serial port</source>
         <translation type="unfinished">Puerto serie manual</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4532"/>
+        <location filename="../qml/Settings.qml" line="4534"/>
         <source>Enter the full path of the serial port, for example /dev/ttyUSB0:</source>
         <translation type="unfinished">Introduzca la ruta completa del puerto serie, por ejemplo /dev/ttyUSB0:</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4577"/>
+        <location filename="../qml/Settings.qml" line="4579"/>
         <source>Delete macro</source>
         <translation type="unfinished">Eliminar macro</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4593"/>
+        <location filename="../qml/Settings.qml" line="4595"/>
         <source>Delete macro %1, &quot;%2&quot;?</source>
         <translation type="unfinished">¿Eliminar la macro %1 , &quot; %2 &quot;?</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4603"/>
+        <location filename="../qml/Settings.qml" line="4605"/>
         <source>Revert settings</source>
         <translation type="unfinished">Restablecer la configuración</translation>
     </message>
     <message>
-        <location filename="../qml/Settings.qml" line="4620"/>
+        <location filename="../qml/Settings.qml" line="4622"/>
         <source>Are you sure you wish to reset all wfview settings?
 If so, wfview will exit and you will need to start the program again.</source>
         <translation type="unfinished">¿Está seguro de que desea restablecer todos los ajustes wfview ?
