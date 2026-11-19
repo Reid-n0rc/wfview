@@ -841,12 +841,12 @@ Utilisez %1 pour le numéro de séquence.</translation>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">Impossible d&apos;ouvrir le port de clé CW %1 . %2</translation>
+        <translation type="unfinished">Impossible d&apos;ouvrir le port de manipulation CW %1. %2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">Échec du port de clé CW %1&#xa0;: %2</translation>
+        <translation type="unfinished">Échec du port de manipulation CW %1&#xa0;: %2</translation>
     </message>
 </context>
 <context>
@@ -1134,17 +1134,17 @@ Utilisez %1 pour le numéro de séquence.</translation>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">Le dossier %1 est en lecture seule</translation>
+        <translation type="unfinished">le dossier %1 est en lecture seule</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">Il était impossible de l&apos;écrire</translation>
+        <translation type="unfinished">il n&apos;a pas pu être écrit</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">Il n&apos;a pas pu être écrit sous forme de fichier de rig</translation>
+        <translation type="unfinished">il n&apos;a pas pu être écrit en tant que fichier rig</translation>
     </message>
 </context>
 <context>
@@ -3755,14 +3755,14 @@ Arrêtez-vous lorsque les commandes de fréquence de la radio suivent le VFO act
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">Sondages lents au TX</translation>
+        <translation type="unfinished">Interrogation ralentie en émission</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">Sur une connexion réseau, interrogez la radio autant de fois plus lentement pendant qu&apos;elle transmet.
-S&apos;applique à l&apos;interrogation automatique et manuelle. Un trafic CAT important pendant la transmission peut provoquer des dysfonctionnements audio sur le LAN de certaines radios (par exemple, la TS-890S). Expérimental.</translation>
+        <translation type="unfinished">Sur une connexion réseau, interroger la radio autant de fois moins souvent pendant l&apos;émission.
+S&apos;applique à l&apos;interrogation automatique et manuelle. Un trafic CAT important pendant l&apos;émission perturbe l&apos;audio LAN de certaines radios (par exemple le TS-890S). Expérimental.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
@@ -3777,16 +3777,16 @@ S&apos;applique à l&apos;interrogation automatique et manuelle. Un trafic CAT i
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">Tampon audio TX radio</translation>
+        <translation type="unfinished">Tampon audio TX de la radio</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">Combien de temps faut-il à la radio pour diffuser le signal audio TX réseau qui lui a été envoyé&#xa0;?
-Lorsqu&apos;une transmission se termine, wfview envoie le reste de son audio puis attend ce temps avant de désactiver PTT , afin que la fin de l&apos;audio ne soit pas coupée (un clic).
-100 ms conviennent à la plupart des radios ; le TS-890S nécessite environ 300 ms .</translation>
+        <translation type="unfinished">Temps nécessaire à la radio pour jouer l&apos;audio TX réseau qui lui a été envoyé.
+À la fin d&apos;une émission, wfview envoie le reste de son audio puis attend cette durée avant de couper PTT, pour que la fin de l&apos;audio ne soit pas tronquée (un clic).
+100 ms conviennent à la plupart des radios&#xa0;; le TS-890S demande environ 300 ms.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -3874,7 +3874,7 @@ Lorsqu&apos;une transmission se termine, wfview envoie le reste de son audio pui
     <message>
         <location filename="../src/RigCreatorController.cpp" line="94"/>
         <source>Rig file not saved</source>
-        <translation type="unfinished">Fichier de rig non enregistré</translation>
+        <translation type="unfinished">Fichier rig non enregistré</translation>
     </message>
     <message>
         <location filename="../src/RigCreatorController.cpp" line="95"/>
@@ -3884,12 +3884,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">Impossible d&apos;enregistrer %1 : %2 .
+        <translation type="unfinished">Impossible d&apos;enregistrer %1&#xa0;: %2.
 
-Enregistrez-le plutôt dans votre propre dossier de configuration&#xa0;:
+Enregistrez-le plutôt dans votre propre dossier rigs&#xa0;:
 %3
 
-wfview utilise un fichier de configuration à la place de celui installé pour la même radio, à condition que sa version soit identique ou plus récente.</translation>
+wfview y utilise un fichier rig à la place de celui installé pour la même radio, tant que sa version est identique ou plus récente.</translation>
     </message>
 </context>
 <context>
@@ -5742,24 +5742,24 @@ Pas à proprement parler un réglage radio.</translation>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">Port clé</translation>
+        <translation type="unfinished">Port de manipulation</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">Port série qui active la commande CW sur une ligne de contrôle, pour les radios qui acceptent une commande CW sur DTR ou RTS .
-Il ne s&apos;agit pas du port CAT de la radio. L&apos;émetteur CW actionne alors ce port au lieu d&apos;envoyer du texte à la radio.</translation>
+        <translation type="unfinished">Port série qui manipule la CW sur une ligne de contrôle, pour les radios qui acceptent un manipulateur CW sur DTR ou RTS.
+Ce n&apos;est pas le port CAT de la radio. Le CW Sender manipule alors ce port au lieu d&apos;envoyer du texte à la radio.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">Ligne clé</translation>
+        <translation type="unfinished">Ligne de manipulation</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">Doit correspondre au réglage de la radio. L&apos;autre ligne est désactivée, car les radios l&apos;utilisent généralement pour PTT .</translation>
+        <translation type="unfinished">Doit correspondre au réglage de la radio. L&apos;autre ligne est maintenue inactive, car les radios l&apos;utilisent souvent pour le PTT.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2679"/>

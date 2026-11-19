@@ -959,12 +959,12 @@ Verwenden Sie%1als Sequenznummer.</translation>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">CW Schlüsselport %1 . %2 konnte nicht geöffnet werden</translation>
+        <translation type="unfinished">CW-Tastport %1 konnte nicht geöffnet werden. %2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">CW Schlüsselport %1 fehlgeschlagen: %2</translation>
+        <translation type="unfinished">CW-Tastport %1 ausgefallen: %2</translation>
     </message>
 </context>
 <context>
@@ -1280,17 +1280,17 @@ Verwenden Sie%1als Sequenznummer.</translation>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">Der Ordner %1 ist schreibgeschützt</translation>
+        <translation type="unfinished">der Ordner %1 ist schreibgeschützt</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">Es konnte nicht geschrieben werden</translation>
+        <translation type="unfinished">sie konnte nicht geschrieben werden</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">Es konnte nicht als Rig-Datei geschrieben werden</translation>
+        <translation type="unfinished">sie konnte nicht als Rig-Datei geschrieben werden</translation>
     </message>
 </context>
 <context>
@@ -3923,14 +3923,14 @@ Lassen Sie die Einstellung weg, wenn die Frequenzbefehle des Funkgeräts dem akt
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">Langsame Umfragen in TX</translation>
+        <translation type="unfinished">Langsamere Abfrage beim Senden</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">Über eine Netzwerkverbindung, fragen Sie das Funkgerät während der Übertragung so oft langsamer ab.
-Gilt für automatische und manuelle Abfrage. Hoher CAT Verkehr während der Übertragung kann bei einigen Funkgeräten (z. B. dem TS-890S) zu Störungen der LAN Audioübertragung führen. Experimentell.</translation>
+        <translation type="unfinished">Über eine Netzwerkverbindung das Funkgerät während des Sendens um diesen Faktor seltener abfragen.
+Gilt für automatische und manuelle Abfrage. Starker CAT-Verkehr während des Sendens führt bei manchen Funkgeräten (zum Beispiel dem TS-890S) zu Aussetzern im LAN-Audio. Experimentell.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
@@ -3945,16 +3945,16 @@ Gilt für automatische und manuelle Abfrage. Hoher CAT Verkehr während der Übe
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">Radio TX Audiopuffer</translation>
+        <translation type="unfinished">TX-Audiopuffer des Funkgeräts</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">Wie lange das Radio benötigt, um das vom Netzwerk gesendete TX Audio wiederzugeben.
-Wenn eine Übertragung endet, sendet wfview den Rest des Audiosignals und wartet dann diese Zeit, bevor PTT ausgeschaltet wird, damit das Ende des Audiosignals nicht abgeschnitten wird (ein Klick).
-100 ms sind für die meisten Funkgeräte ausreichend; das TS-890S benötigt etwa 300 ms .</translation>
+        <translation type="unfinished">Wie lange das Funkgerät braucht, um das über das Netzwerk gesendete TX-Audio abzuspielen.
+Wenn eine Sendung endet, sendet wfview den Rest seines Audios und wartet dann so lange, bevor PTT ausgeschaltet wird, damit das Ende des Audios nicht abgeschnitten wird (ein Klicken).
+100 ms passen für die meisten Funkgeräte; das TS-890S braucht etwa 300 ms.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -4052,12 +4052,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">%1 konnte nicht gespeichert werden: %2 .
+        <translation type="unfinished">%1 konnte nicht gespeichert werden: %2.
 
-Speichern Sie es stattdessen in Ihrem eigenen Rigs-Ordner:
+Speichern Sie sie stattdessen in Ihrem eigenen Rig-Ordner:
 %3
 
-wfview verwendet dort eine Rig-Datei anstelle der installierten Datei für dasselbe Funkgerät, sofern deren Version gleich oder neuer ist.</translation>
+wfview verwendet eine Rig-Datei dort anstelle der installierten für dasselbe Funkgerät, sofern ihre Version gleich oder neuer ist.</translation>
     </message>
 </context>
 <context>
@@ -4994,24 +4994,24 @@ Das ist keine eigentliche Radioeinstellung.</translation>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">Schlüsselport</translation>
+        <translation type="unfinished">Tastport</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">Serielle Schnittstelle, die CW auf einer Steuerleitung eingibt, für Funkgeräte, die einen CW Schlüssel auf DTR oder RTS akzeptieren.
-Dies ist nicht der CAT Anschluss des Funkgeräts. Der CW Sender betätigt diesen Anschluss, anstatt Text an das Funkgerät zu senden.</translation>
+        <translation type="unfinished">Serielle Schnittstelle, die CW über eine Steuerleitung tastet, für Funkgeräte, die eine CW-Taste an DTR oder RTS annehmen.
+Dies ist nicht die CAT-Schnittstelle des Funkgeräts. Der CW-Sender tastet dann diese Schnittstelle, statt Text an das Funkgerät zu senden.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">Schlüssellinie</translation>
+        <translation type="unfinished">Tastleitung</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">Muss mit den Einstellungen des Funkgeräts übereinstimmen. Die andere Leitung ist nicht belegt, da sie bei Funkgeräten üblicherweise für PTT verwendet wird.</translation>
+        <translation type="unfinished">Muss der Einstellung im Funkgerät entsprechen. Die andere Leitung bleibt inaktiv, da Funkgeräte sie oft für PTT verwenden.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2693"/>

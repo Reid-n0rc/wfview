@@ -959,12 +959,12 @@ Use %1 for sequence number.</source>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">CWキーポート%1 . %2を開けませんでした</translation>
+        <translation type="unfinished">CWキーイングポート %1 を開けませんでした。%2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">CWキーポート%1が失敗しました: %2</translation>
+        <translation type="unfinished">CWキーイングポート %1 でエラーが発生しました: %2</translation>
     </message>
 </context>
 <context>
@@ -1328,17 +1328,17 @@ You will see this dialog box the next time you open wfview.</source>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">フォルダ%1は読み取り専用です</translation>
+        <translation type="unfinished">フォルダー %1 は読み取り専用です</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">それは書けなかった</translation>
+        <translation type="unfinished">書き込めませんでした</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">リグファイルとして書き込むことができませんでした</translation>
+        <translation type="unfinished">リグファイルとして書き込めませんでした</translation>
     </message>
 </context>
 <context>
@@ -3972,38 +3972,38 @@ VFO Bが選択されると、 wfview未選択周波数コマンドにチュー�
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">TXのポーリングが遅い</translation>
+        <translation type="unfinished">送信中のポーリングを遅くする</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">ネットワーク接続を介して、送信中は無線機をこの回数だけ遅い速度でポーリングします。
-自動ポーリングと手動ポーリングの両方に適用されます。送信中にCATトラフィックが大量に発生すると、一部の無線機（ TS-890Sなど）でLANオーディオに不具合が生じる場合があります。実験的な機能です。</translation>
+        <translation type="unfinished">ネットワーク接続時、送信中は無線機へのポーリングをこの倍数だけ遅くします。
+自動・手動ポーリングの両方に適用されます。送信中に CAT 通信が多いと、一部の無線機（例: TS-890S）で LAN 音声が途切れます。実験的機能です。</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
         <source>Factor</source>
-        <translation type="unfinished">要素</translation>
+        <translation type="unfinished">倍率</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2036"/>
         <source>x slower</source>
-        <translation type="unfinished">x より遅い</translation>
+        <translation type="unfinished">倍遅く</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">無線TX音声バッファ</translation>
+        <translation type="unfinished">無線機の TX 音声バッファー</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">無線機がTX送信された音声データを再生するまでにかかる時間。
-送信が終了すると、 wfview残りの音声を送信し、 PTTオフにする前にこの時間待機するため、音声の終わりが途切れることはありません (クリック音)。
-100 msほとんどの無線機に適していますが、 TS-890S約300 msが必要です。</translation>
+        <translation type="unfinished">無線機が、ネットワーク経由で送られた TX 音声を再生し終えるまでの時間。
+送信が終わると、wfview は残りの音声を送り、この時間だけ待ってから PTT をオフにします。音声の末尾が切れる（クリック音）のを防ぐためです。
+ほとんどの無線機は 100 ms で十分です。TS-890S は約 300 ms 必要です。</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -4091,7 +4091,7 @@ When a transmission ends, wfview sends the rest of its audio and then waits this
     <message>
         <location filename="../src/RigCreatorController.cpp" line="94"/>
         <source>Rig file not saved</source>
-        <translation type="unfinished">リグファイルが保存されませんでした</translation>
+        <translation type="unfinished">リグファイルを保存できませんでした</translation>
     </message>
     <message>
         <location filename="../src/RigCreatorController.cpp" line="95"/>
@@ -4101,12 +4101,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">%1を保存できませんでした: %2 。
+        <translation type="unfinished">%1 を保存できませんでした: %2。
 
-代わりに自分のリグフォルダに保存してください。
+代わりに自分の rigs フォルダーに保存してください:
 %3
 
-wfview 、同じ無線機にインストールされているリグファイルの代わりに、そこに用意されたリグファイルを使用します。ただし、そのバージョンが同じか、または新しい場合に限ります。</translation>
+wfview は、バージョンが同じかそれより新しい場合、同じ無線機についてインストール済みのものの代わりにそこにあるリグファイルを使います。</translation>
     </message>
 </context>
 <context>
@@ -5230,24 +5230,24 @@ USBラジオ用</translation>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">キーポート</translation>
+        <translation type="unfinished">キーイングポート</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">制御線上でCWキーイングをRTS DTR CWキーイングを受け付ける無線機用。
-これは無線機のCATポートではありません。CW送信機CW 、無線機にテキストを送信する代わりに、このポートをキーイングします。</translation>
+        <translation type="unfinished">制御線で CW をキーイングするシリアルポートです。DTR または RTS で CW キーを受け付ける無線機用です。
+これは無線機の CAT ポートではありません。CW 送信者は、無線機にテキストを送る代わりにこのポートをキーイングします。</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">キーライン</translation>
+        <translation type="unfinished">キーイングライン</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">無線機の設定と一致させる必要があります。もう一方の回線は、無線機がPTTに使用することが多いため、オフにしておきます。</translation>
+        <translation type="unfinished">無線機側の設定と一致させてください。もう一方の線は、無線機が PTT によく使うため、オフのままにします。</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2966"/>

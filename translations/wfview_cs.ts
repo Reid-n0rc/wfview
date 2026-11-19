@@ -841,12 +841,12 @@ Pro pořadové číslo použijte %1 .</translation>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">Nelze otevřít port klíče CW %1 . %2</translation>
+        <translation type="unfinished">Nelze otevřít port klíčování CW %1. %2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">Selhal port klíče CW %1 : %2</translation>
+        <translation type="unfinished">Port klíčování CW %1 selhal: %2</translation>
     </message>
 </context>
 <context>
@@ -1134,17 +1134,17 @@ Pro pořadové číslo použijte %1 .</translation>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">Složka %1 je pouze pro čtení</translation>
+        <translation type="unfinished">složka %1 je jen pro čtení</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">to se napsat nedalo</translation>
+        <translation type="unfinished">nepodařilo se jej zapsat</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">Nešlo to zapsat jako rig soubor</translation>
+        <translation type="unfinished">nepodařilo se jej zapsat jako soubor rig</translation>
     </message>
 </context>
 <context>
@@ -3758,14 +3758,14 @@ Pokud frekvenční povely rádia sledují aktivní VFO (například Icom 0x25), 
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">Pomalé dotazování na TX</translation>
+        <translation type="unfinished">Pomalejší dotazování při TX</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">Přes síťové připojení dotazujte rádio během vysílání mnohokrát pomaleji.
-Platí pro automatické i manuální dotazování. Silný provoz CAT během vysílání způsobuje, že některé rádiové stanice (například TS-890S) narušují zvuk LAN . Experimentální.</translation>
+        <translation type="unfinished">Při síťovém připojení dotazovat rádio během vysílání tolikrát pomaleji.
+Platí pro automatické i ruční dotazování. Silný provoz CAT během vysílání způsobuje u některých rádií (například TS-890S) výpadky zvuku LAN. Experimentální.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
@@ -3775,21 +3775,21 @@ Platí pro automatické i manuální dotazování. Silný provoz CAT během vys�
     <message>
         <location filename="../qml/RigCreator.qml" line="2036"/>
         <source>x slower</source>
-        <translation type="unfinished">x pomalejší</translation>
+        <translation type="unfinished">x pomaleji</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">Vyrovnávací paměť zvuku rádiového TX</translation>
+        <translation type="unfinished">Zvuková vyrovnávací paměť TX rádia</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">Jak dlouho trvá rádiu přehrání odeslaného síťového TX zvuku.
-Když přenos skončí, wfview odešle zbytek zvuku a poté čeká tak dlouho, než se PTT vypne, aby se konec zvuku nepřerušil (cvaknutí).
-100 ms vyhovuje většině rádií; TS-890S potřebuje přibližně 300 ms .</translation>
+        <translation type="unfinished">Jak dlouho rádiu trvá přehrát zvuk TX, který mu byl poslán po síti.
+Když vysílání skončí, wfview pošle zbytek zvuku a pak počká tuto dobu, než vypne PTT, aby se konec zvuku neuřízl (cvaknutí).
+100 ms vyhovuje většině rádií; TS-890S potřebuje asi 300 ms.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -3877,7 +3877,7 @@ Když přenos skončí, wfview odešle zbytek zvuku a poté čeká tak dlouho, n
     <message>
         <location filename="../src/RigCreatorController.cpp" line="94"/>
         <source>Rig file not saved</source>
-        <translation type="unfinished">Soubor s rigem nebyl uložen</translation>
+        <translation type="unfinished">Soubor rig nebyl uložen</translation>
     </message>
     <message>
         <location filename="../src/RigCreatorController.cpp" line="95"/>
@@ -3887,12 +3887,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">Nepodařilo se uložit %1 : %2 .
+        <translation type="unfinished">Nelze uložit %1: %2.
 
-Uložte si to raději do vlastní složky s rigs:
+Uložte jej místo toho do vlastní složky rigs:
 %3
 
-wfview používá rig soubor místo nainstalovaného souboru pro stejné rádio, pokud je jeho verze stejná nebo novější.</translation>
+wfview použije soubor rig z této složky místo nainstalovaného pro stejné rádio, pokud je jeho verze stejná nebo novější.</translation>
     </message>
 </context>
 <context>
@@ -5745,24 +5745,24 @@ Ve skutečnosti se nejedná o nastavení rádia.</translation>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">Klíčový port</translation>
+        <translation type="unfinished">Port klíčování</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">Sériový port, který ovládá CW na řídicí lince, pro rádia, která akceptují CW klíč na DTR nebo RTS .
-Toto není CAT port rádia. CW vysílač pak tento port klíčuje místo odesílání textu do rádia.</translation>
+        <translation type="unfinished">Sériový port, který klíčuje CW na řídicí lince, pro rádia, která přijímají klíč CW na DTR nebo RTS.
+Toto není port CAT rádia. CW Sender pak klíčuje tento port místo posílání textu do rádia.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">Klíčová linie</translation>
+        <translation type="unfinished">Linka klíčování</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">Musí odpovídat vlastnímu nastavení rádia. Druhá linka je vypnutá, protože rádia ji běžně používají pro PTT .</translation>
+        <translation type="unfinished">Musí odpovídat nastavení samotného rádia. Druhá linka zůstává vypnutá, protože ji rádia často používají pro PTT.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2679"/>

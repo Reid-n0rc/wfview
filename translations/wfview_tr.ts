@@ -959,12 +959,12 @@ Sıra numarası için %1 kullanın.</translation>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">CW anahtar portu %1 . %2 açılamadı</translation>
+        <translation type="unfinished">CW anahtarlama portu %1 açılamadı. %2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">CW anahtar bağlantı noktası %1 başarısız oldu: %2</translation>
+        <translation type="unfinished">CW anahtarlama portu %1 hata verdi: %2</translation>
     </message>
 </context>
 <context>
@@ -1322,17 +1322,17 @@ You will see this dialog box the next time you open wfview.</source>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">%1 klasörü salt okunurdur</translation>
+        <translation type="unfinished">%1 klasörü salt okunur</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">yazılamazdı</translation>
+        <translation type="unfinished">dosya yazılamadı</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">Bu, bir donanım dosyası olarak yazılamadı</translation>
+        <translation type="unfinished">dosya rig dosyası olarak yazılamadı</translation>
     </message>
 </context>
 <context>
@@ -3978,19 +3978,19 @@ Radyonun frekans komutları aktif VFO takip ettiğinde (örneğin Icom 0x25) dev
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">TX yavaş yoklama</translation>
+        <translation type="unfinished">TX sırasında yavaş sorgulama</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">Ağ bağlantısı üzerinden, radyo iletim yaparken, radyo sinyalini bu kadar daha yavaş bir şekilde sorgulayın.
-Otomatik ve manuel yoklama için geçerlidir. İletim sırasında yoğun CAT trafiği, bazı telsizlerin (örneğin TS-890S) LAN sesinde arızaya neden olur. Deneysel.</translation>
+        <translation type="unfinished">Ağ bağlantısında, telsiz yayın yaparken onu bu kadar kat daha yavaş sorgula.
+Otomatik ve elle sorgulamaya uygulanır. Yayın sırasında yoğun CAT trafiği bazı telsizlerin (örneğin TS-890S) LAN sesinde kesintilere yol açar. Deneysel.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
         <source>Factor</source>
-        <translation type="unfinished">Faktör</translation>
+        <translation type="unfinished">Katsayı</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2036"/>
@@ -4000,16 +4000,16 @@ Otomatik ve manuel yoklama için geçerlidir. İletim sırasında yoğun CAT tra
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">Radyo TX ses tamponu</translation>
+        <translation type="unfinished">Telsizin TX ses tamponu</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">Radyonun, kendisine gönderilen ağ üzerinden TX ses sinyalini çalması ne kadar sürer?
-İletim sona erdiğinde, wfview sesin geri kalanını gönderir ve ardından PTT kapatmadan önce bu kadar süre bekler, böylece sesin sonu kesilmez (bir tıklama sesi duyulmaz).
-100 ms çoğu telsiz için uygundur; TS-890S ise yaklaşık 300 ms ihtiyacı vardır.</translation>
+        <translation type="unfinished">Telsizin, kendisine ağ üzerinden gönderilen TX sesini çalmasının ne kadar sürdüğü.
+Bir yayın bittiğinde wfview sesinin kalanını gönderir ve PTT&apos;yi kapatmadan önce bu kadar bekler; böylece sesin sonu kesilmez (bir tık sesi).
+100 ms çoğu telsize uygundur; TS-890S yaklaşık 300 ms gerektirir.</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -4107,12 +4107,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">%1 : %2 kaydedilemedi.
+        <translation type="unfinished">%1 kaydedilemedi: %2.
 
-Bunun yerine kendi donanım klasörünüze kaydedin:
+Bunun yerine kendi rigs klasörünüze kaydedin:
 %3
 
-wfview aynı radyo için kurulu olanın yerine, sürümü aynı veya daha yeni olan bir rig dosyasını kullanır.</translation>
+wfview, sürümü aynı veya daha yeni olduğu sürece, aynı telsiz için kurulu olanın yerine oradaki rig dosyasını kullanır.</translation>
     </message>
 </context>
 <context>
@@ -5231,29 +5231,29 @@ USB radyolar için</translation>
     <message>
         <location filename="../qml/Settings.qml" line="2609"/>
         <source>CW Keying</source>
-        <translation type="unfinished">CW Anahtarlama</translation>
+        <translation type="unfinished">CW anahtarlama</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">Ana Bağlantı Noktası</translation>
+        <translation type="unfinished">Anahtarlama portu</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">DTR veya RTS üzerinden CW sinyali alan telsizler için, kontrol hattı üzerinden CW sinyali gönderen seri port.
-Bu, radyonun CAT portu değil. CW Gönderici daha sonra radyoya metin göndermek yerine bu portu tetikliyor.</translation>
+        <translation type="unfinished">DTR veya RTS üzerinden CW anahtarı kabul eden telsizler için, bir kontrol hattı üzerinden CW anahtarlayan seri port.
+Bu, telsizin CAT portu değildir. CW Gönderen bu durumda telsize metin göndermek yerine bu portu anahtarlar.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">Ana Satır</translation>
+        <translation type="unfinished">Anahtarlama hattı</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">Radyonun kendi ayarlarıyla eşleşmelidir. Diğer hat kapalı tutulur, çünkü radyolar genellikle bu hattı PTT için kullanır.</translation>
+        <translation type="unfinished">Telsizin kendi ayarıyla eşleşmelidir. Diğer hat kapalı tutulur, çünkü telsizler genellikle onu PTT için kullanır.</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2966"/>

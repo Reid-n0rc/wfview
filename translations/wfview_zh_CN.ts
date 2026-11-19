@@ -959,12 +959,12 @@ Use %1 for sequence number.</source>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="44"/>
         <source>Could not open CW key port %1. %2</source>
-        <translation type="unfinished">无法打开CW密钥端口%1 。 %2</translation>
+        <translation type="unfinished">无法打开 CW 键控端口 %1。%2</translation>
     </message>
     <message>
         <location filename="../src/cwserialkeyer.cpp" line="198"/>
         <source>CW key port %1 failed: %2</source>
-        <translation type="unfinished">CW密钥端口%1失败： %2</translation>
+        <translation type="unfinished">CW 键控端口 %1 出错：%2</translation>
     </message>
 </context>
 <context>
@@ -1322,17 +1322,17 @@ You will see this dialog box the next time you open wfview.</source>
     <message>
         <location filename="../include/RigCreatorController.h" line="93"/>
         <source>the folder %1 is read-only</source>
-        <translation type="unfinished">文件夹%1为只读文件夹</translation>
+        <translation type="unfinished">文件夹 %1 为只读</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="109"/>
         <source>it could not be written</source>
-        <translation type="unfinished">它无法写出来</translation>
+        <translation type="unfinished">无法写入</translation>
     </message>
     <message>
         <location filename="../include/RigCreatorController.h" line="110"/>
         <source>it could not be written as a rig file</source>
-        <translation type="unfinished">它无法编写为绑定文件</translation>
+        <translation type="unfinished">无法写入为 rig 文件</translation>
     </message>
 </context>
 <context>
@@ -3970,38 +3970,38 @@ Leave off when the radio&apos;s frequency commands follow the active VFO (for ex
     <message>
         <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Slow polling on TX</source>
-        <translation type="unfinished">TX投票速度缓慢</translation>
+        <translation type="unfinished">发射时降低轮询频率</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2020"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
-        <translation type="unfinished">通过网络连接，在无线电发射时以慢这么多倍的速度轮询它。
-适用于自动和手动轮询。传输期间的大量CAT流量会导致某些无线电设备（例如TS-890S ）的LAN音频出现故障。实验性功能。</translation>
+        <translation type="unfinished">通过网络连接时，在电台发射期间将轮询放慢这么多倍。
+适用于自动和手动轮询。发射期间大量的 CAT 通信会使某些电台（例如 TS-890S）的 LAN 音频出现断续。实验性功能。</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2027"/>
         <source>Factor</source>
-        <translation type="unfinished">因素</translation>
+        <translation type="unfinished">倍数</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2036"/>
         <source>x slower</source>
-        <translation type="unfinished">x 速度慢</translation>
+        <translation type="unfinished">倍（更慢）</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2039"/>
         <source>Radio TX audio buffer</source>
-        <translation type="unfinished">无线电TX音频缓冲</translation>
+        <translation type="unfinished">电台 TX 音频缓冲</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2058"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
-        <translation type="unfinished">收音机播放接收到的网络TX音频需要多长时间。
-当传输结束时， wfview会发送剩余的音频，然后等待这么长时间才会关闭PTT ，这样音频的结尾就不会被切断（发出咔嗒声）。
-100 ms适用于大多数无线电； TS-890S需要大约 300 ms 。</translation>
+        <translation type="unfinished">电台播放通过网络发送给它的 TX 音频所需的时间。
+发射结束时，wfview 发送剩余音频，然后等待这段时间再关闭 PTT，以免音频结尾被截断（咔嗒声）。
+100 ms 适合大多数电台；TS-890S 需要约 300 ms。</translation>
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="2063"/>
@@ -4089,7 +4089,7 @@ When a transmission ends, wfview sends the rest of its audio and then waits this
     <message>
         <location filename="../src/RigCreatorController.cpp" line="94"/>
         <source>Rig file not saved</source>
-        <translation type="unfinished">绑定文件未保存</translation>
+        <translation type="unfinished">rig 文件未保存</translation>
     </message>
     <message>
         <location filename="../src/RigCreatorController.cpp" line="95"/>
@@ -4099,12 +4099,12 @@ Save it to your own rigs folder instead:
 %3
 
 wfview uses a rig file there in place of the installed one for the same radio, as long as its Version is the same or newer.</source>
-        <translation type="unfinished">无法保存%1 : %2 。
+        <translation type="unfinished">无法保存 %1：%2。
 
-请将其保存到您自己的装备文件夹中：
+请改为保存到您自己的 rigs 文件夹：
 %3
 
-wfview会使用一个 rig 文件来代替同一台收音机上已安装的文件，只要其版本相同或更新即可。</translation>
+只要版本相同或更新，wfview 就会使用该处的 rig 文件代替同一电台已安装的文件。</translation>
     </message>
 </context>
 <context>
@@ -5219,29 +5219,29 @@ for USB radios</source>
     <message>
         <location filename="../qml/Settings.qml" line="2609"/>
         <source>CW Keying</source>
-        <translation type="unfinished">CW键控</translation>
+        <translation type="unfinished">CW 键控</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2615"/>
         <source>Key Port</source>
-        <translation type="unfinished">关键端口</translation>
+        <translation type="unfinished">键控端口</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2630"/>
         <source>Serial port that keys CW on a control line, for radios that accept a CW key on DTR or RTS.
 This is not the radio&apos;s CAT port. The CW Sender then keys this port instead of sending text to the radio.</source>
-        <translation type="unfinished">串行端口，可通过控制线发出CW键，适用于接受DTR或RTS上的CW键的无线电。
-这不是收音机的CAT端口。CW CW器会通过这个端口发送信号，而不是向收音机发送文本。</translation>
+        <translation type="unfinished">通过控制线键控 CW 的串口，适用于接受 DTR 或 RTS 作为 CW 键的电台。
+这不是电台的 CAT 端口。CW 发送者随后会键控此端口，而不是向电台发送文本。</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2638"/>
         <source>Key Line</source>
-        <translation type="unfinished">关键线</translation>
+        <translation type="unfinished">键控线</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2653"/>
         <source>Must match the radio&apos;s own setting. The other line is held off, as radios commonly use it for PTT.</source>
-        <translation type="unfinished">必须与收音机的设置相匹配。另一条线路被断开，因为收音机通常将其用于PTT 。</translation>
+        <translation type="unfinished">必须与电台自身的设置一致。另一条线保持关闭，因为电台通常将其用于 PTT。</translation>
     </message>
     <message>
         <location filename="../qml/Settings.qml" line="2966"/>
