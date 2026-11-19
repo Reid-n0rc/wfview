@@ -3726,7 +3726,7 @@ Locations searched:
     </message>
     <message>
         <location filename="../qml/RigCreator.qml" line="1767"/>
-        <location filename="../qml/RigCreator.qml" line="2099"/>
+        <location filename="../qml/RigCreator.qml" line="2129"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -3906,52 +3906,52 @@ Locations searched:
         <translation>屋頂</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1990"/>
+        <location filename="../qml/RigCreator.qml" line="1998"/>
         <source>Features</source>
         <translation>特徵</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1994"/>
+        <location filename="../qml/RigCreator.qml" line="2002"/>
         <source>Has Spectrum</source>
         <translation>有頻譜</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1995"/>
+        <location filename="../qml/RigCreator.qml" line="2003"/>
         <source>Has LAN</source>
         <translation>有LAN</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1996"/>
+        <location filename="../qml/RigCreator.qml" line="2004"/>
         <source>Has Ethernet</source>
         <translation>有以太網</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1997"/>
+        <location filename="../qml/RigCreator.qml" line="2005"/>
         <source>Has WiFi</source>
         <translation>有無線網路</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1998"/>
+        <location filename="../qml/RigCreator.qml" line="2006"/>
         <source>Has Transmit</source>
         <translation>有傳輸</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="1999"/>
+        <location filename="../qml/RigCreator.qml" line="2007"/>
         <source>Has FD Comms</source>
         <translation>有 FD 通訊</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2000"/>
+        <location filename="../qml/RigCreator.qml" line="2008"/>
         <source>Has Cmd 29</source>
         <translation>有命令 29</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2002"/>
+        <location filename="../qml/RigCreator.qml" line="2010"/>
         <source>Absolute VFO Freq</source>
         <translation type="unfinished">絕對VFO頻率</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2007"/>
+        <location filename="../qml/RigCreator.qml" line="2015"/>
         <source>Enable when the Selected Freq and Unselected Freq commands always address VFO A and VFO B (for example Kenwood FA/FB), rather than the active and inactive VFO.
 When VFO B is selected, wfview then sends tuning to the Unselected Freq command and shows its replies as the active frequency.
 Leave off when the radio&apos;s frequency commands follow the active VFO (for example Icom 0x25).</source>
@@ -3960,34 +3960,46 @@ Leave off when the radio&apos;s frequency commands follow the active VFO (for ex
 當收音機的頻率命令跟隨活動的VFO （例如Icom 0x25）時停止。</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2015"/>
+        <location filename="../qml/RigCreator.qml" line="2022"/>
+        <source>Tone squelch is 1</source>
+        <translation type="unfinished">亞音靜噪 = 1</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2027"/>
+        <source>Enable when the radio&apos;s tone mode uses 1 for tone squelch (encode and decode) and 2 for tone (encode only), for example the Yaesu FT-710.
+wfview uses 1 for tone and 2 for tone squelch, and swaps them for these radios.</source>
+        <translation type="unfinished">當電台的亞音模式用 1 表示亞音靜噪（編碼和解碼）、用 2 表示亞音（僅編碼）時啟用，例如 Yaesu FT-710。
+wfview 用 1 表示亞音、用 2 表示亞音靜噪，並會為這類電台互換這兩個值。</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2033"/>
         <source>Slow polling on TX</source>
         <translation type="unfinished">發射時降低輪詢頻率</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2020"/>
+        <location filename="../qml/RigCreator.qml" line="2038"/>
         <source>Over a network connection, poll the radio this many times slower while it transmits.
 Applies to automatic and manual polling. Heavy CAT traffic during transmit makes some radios (for example the TS-890S) glitch their LAN audio. Experimental.</source>
         <translation type="unfinished">透過網路連線時，在電台發射期間將輪詢放慢這麼多倍。
 適用於自動和手動輪詢。發射期間大量的 CAT 通訊會使某些電台（例如 TS-890S）的 LAN 音訊出現斷續。實驗性功能。</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2027"/>
+        <location filename="../qml/RigCreator.qml" line="2045"/>
         <source>Factor</source>
         <translation type="unfinished">倍數</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2036"/>
+        <location filename="../qml/RigCreator.qml" line="2054"/>
         <source>x slower</source>
         <translation type="unfinished">倍（更慢）</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2039"/>
+        <location filename="../qml/RigCreator.qml" line="2057"/>
         <source>Radio TX audio buffer</source>
         <translation type="unfinished">電台 TX 音訊緩衝</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2058"/>
+        <location filename="../qml/RigCreator.qml" line="2076"/>
         <source>How long the radio takes to play the network TX audio it has been sent.
 When a transmission ends, wfview sends the rest of its audio and then waits this long before PTT off, so the end of the audio is not cut off (a click).
 100 ms suits most radios; the TS-890S needs about 300 ms.</source>
@@ -3996,82 +4008,106 @@ When a transmission ends, wfview sends the rest of its audio and then waits this
 100 ms 適合大多數電台；TS-890S 需要約 300 ms。</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2063"/>
+        <location filename="../qml/RigCreator.qml" line="2081"/>
         <source>ms</source>
         <translation type="unfinished">ms</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2072"/>
+        <location filename="../qml/RigCreator.qml" line="2090"/>
         <source>Spectrum</source>
         <translation>光譜</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2078"/>
+        <location filename="../qml/RigCreator.qml" line="2096"/>
         <source>Num RX</source>
         <translation>編號RX</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2079"/>
+        <location filename="../qml/RigCreator.qml" line="2097"/>
         <source>VFO/RX</source>
         <translation>VFO/RX</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2080"/>
+        <location filename="../qml/RigCreator.qml" line="2098"/>
         <source>Seq Max</source>
         <translation>最大序列數</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2081"/>
+        <location filename="../qml/RigCreator.qml" line="2099"/>
         <source>Amp Max</source>
         <translation>最大電流</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2082"/>
+        <location filename="../qml/RigCreator.qml" line="2100"/>
         <source>Len Max</source>
         <translation>萊恩·馬克斯</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2083"/>
+        <location filename="../qml/RigCreator.qml" line="2101"/>
         <source>dB per DN</source>
         <translation type="unfinished">每個DN的dB</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2090"/>
+        <location filename="../qml/RigCreator.qml" line="2104"/>
+        <source>Scope status block</source>
+        <translation type="unfinished">頻譜狀態區塊</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2109"/>
+        <source>Enable when each scope frame from the radio also carries its frequencies, mode and other settings, for example the Yaesu FT-710.
+wfview then takes those values from the frames and doesn&apos;t poll for them while frames arrive. Polling resumes by itself when they stop.</source>
+        <translation type="unfinished">當電台傳送的每個頻譜幀還包含其頻率、模式和其他設定時啟用，例如 Yaesu FT-710。
+wfview 隨後從幀中讀取這些值，並在幀持續到達時不再輪詢它們。幀停止後會自動恢復輪詢。</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2120"/>
         <source>Memories</source>
         <translation>回憶</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2096"/>
+        <location filename="../qml/RigCreator.qml" line="2126"/>
         <source>Grp</source>
         <translation>群組</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2097"/>
+        <location filename="../qml/RigCreator.qml" line="2127"/>
         <source>Mem</source>
         <translation>記憶體</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2098"/>
+        <location filename="../qml/RigCreator.qml" line="2128"/>
         <source>Sat</source>
         <translation>星期六</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2117"/>
+        <location filename="../qml/RigCreator.qml" line="2131"/>
+        <source>CW Mem</source>
+        <translation type="unfinished">CW 記憶</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2147"/>
+        <source>The keyer memory (1-5) that CW Sender text goes through, on radios that send CW text by playing a keyer memory (Yaesu KM / KY).
+What the memory held is put back when sending ends.</source>
+        <translation type="unfinished">在透過播放電鍵記憶來傳送 CW 文字的電台上（Yaesu KM / KY），CW 發送者文字所經過的電鍵記憶（1-5）。
+傳送結束後，記憶中原有的內容會被恢復。</translation>
+    </message>
+    <message>
+        <location filename="../qml/RigCreator.qml" line="2168"/>
         <source>Main Memory Format</source>
         <translation>主記憶體格式</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2123"/>
+        <location filename="../qml/RigCreator.qml" line="2174"/>
         <source>See your QWidget tooltip text (keep it in docs/help).</source>
         <translation>查看您的 QWidget 工具提示文字（將其儲存在文件/說明中）。</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2129"/>
+        <location filename="../qml/RigCreator.qml" line="2180"/>
         <source>Satellite Memory Format</source>
         <translation>衛星記憶體格式</translation>
     </message>
     <message>
-        <location filename="../qml/RigCreator.qml" line="2144"/>
+        <location filename="../qml/RigCreator.qml" line="2195"/>
         <source>Close</source>
         <translation>關閉</translation>
     </message>
