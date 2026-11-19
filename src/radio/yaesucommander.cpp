@@ -19,6 +19,8 @@ constexpr qint64 rejectedCommandWindowMs = 500;
 constexpr int maxRecentCommands = 16;
 // Scope frame byte holding the scope display mode: 0 = Center, 1 = Cursor, 2 = Fixed.
 constexpr int scopeWindowModeByte = 52;
+// How long a VFO-A report from the radio is taken as newer than the scope frames.
+constexpr qint64 vfoReportNewerMs = 1000;
 }
 
 namespace
@@ -389,11 +391,26 @@ void yaesuCommander::haveScopeData(QByteArray in)
 
     scopeData scope;
     scope.data = QByteArray((char*)d->wf1,sizeof(d->wf1));
+    // The first point is not spectrum (on the FT-710 it reads about twice the noise
+    // floor in every frame), so it is drawn with its neighbour's value.
+    if (scope.data.size() > 1)
+        scope.data[0] = scope.data.at(1);
     scope.valid=true;
     scope.receiver=0;
     scope.startFreq=fa.MHzDouble-((cs.freq/2)/1000000.0);
     scope.endFreq=fa.MHzDouble+((cs.freq/2)/1000000.0);
     updateScopeWindow(data, fa.MHzDouble, cs, scope);
+    // The radio reports a new VFO-A (Auto Information) before a scope frame carries it. While such a
+    // report is recent, it is newer than the frame's value: the Center axis centres on it, as the radio's
+    // own display does, and the frame's older value is not stored over it.
+    const bool vfoReportNewer = rigCaps.scopeStatusBlock && vfoReportClock.isValid()
+        && vfoReportClock.elapsed() < vfoReportNewerMs && vfoReportHz != fa.Hz;
+    if (vfoReportNewer && scopeWindowMode == 0)
+    {
+        const double centreMHz = vfoReportHz / 1000000.0;
+        scope.startFreq = centreMHz - ((cs.freq / 2) / 1000000.0);
+        scope.endFreq = centreMHz + ((cs.freq / 2) / 1000000.0);
+    }
     scope.mode = mode;
     scope.oor = false;
     scope.fixedEdge = 1;
@@ -401,10 +418,12 @@ void yaesuCommander::haveScopeData(QByteArray in)
     queue->receiveValue(funcScopeWaveData,QVariant::fromValue<scopeData>(scope),0);
 
     if (rigCaps.commands.contains(funcFreq)) {
-        queue->receiveValue(funcFreq,QVariant::fromValue<freqt>(fa),0);
+        if (!vfoReportNewer)
+            queue->receiveValue(funcFreq, QVariant::fromValue<freqt>(fa), 0);
         queue->receiveValue(funcFreq,QVariant::fromValue<freqt>(fb),1);
     } else {
-        queue->receiveValue(funcSelectedFreq,QVariant::fromValue<freqt>(fa),0);
+        if (!vfoReportNewer)
+            queue->receiveValue(funcSelectedFreq, QVariant::fromValue<freqt>(fa), 0);
         queue->receiveValue(funcUnselectedFreq,QVariant::fromValue<freqt>(fb),0);
     }
 
@@ -417,6 +436,12 @@ void yaesuCommander::haveScopeData(QByteArray in)
             statusClock.start();
         }
         const qint64 now = statusClock.elapsed();
+        // The VFO frequencies and the main mode, decoded from this frame above, are current as well.
+        for (const funcs f : {funcFreq, funcSelectedFreq, funcUnselectedFreq, funcSelectedMode, funcMode})
+        {
+            if (rigCaps.commands.contains(f))
+                statusFreshMs.insert(f, now);
+        }
         for (auto it = confirmed.constBegin(); it != confirmed.constEnd(); ++it)
         {
             if (rigCaps.commands.contains(it.key()))
@@ -1194,6 +1219,11 @@ void yaesuCommander::parseData(QByteArray data)
             {
                 f.MHzDouble = f.Hz/1000000.0;
                 value.setValue(f);
+                if (receiver == 0 && func != funcUnselectedFreq)
+                {
+                    vfoReportHz = f.Hz;
+                    vfoReportClock.start();
+                }
             }
             break;
         }
