@@ -316,6 +316,8 @@ SOURCES += \
     src/cluster.cpp \
     src/commhandler.cpp \
     src/audio/cwsidetonegenerator.cpp \
+    src/cwmorse.cpp \
+    src/cwserialkeyer.cpp \
     src/database.cpp \
     src/directradiotransport.cpp \
     src/freqctrlquick.cpp \
@@ -403,6 +405,8 @@ HEADERS  += \
     include/cluster.h \
     include/colorprefs.h \
     include/commhandler.h \
+    include/cwmorse.h \
+    include/cwserialkeyer.h \
     include/cwsidetonegenerator.h \
     include/database.h \
     include/directradiotransport.h \
